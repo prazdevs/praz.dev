@@ -2,7 +2,7 @@
 const posts = [
   {
     title: 'Asynchronous <select> options for dynamic forms with Vue 3',
-    to: 'posts/1',
+    to: '/blog/access',
     date: '4-10-2021',
     ttr: '6 min read',
     tags: ['typescript', 'vuejs'],
@@ -10,7 +10,7 @@ const posts = [
   },
   {
     title: 'Rebuilding my website for accessibility',
-    to: 'posts/2',
+    to: '/blog/asynchronous',
     date: '9-11-2020',
     ttr: '7 min read',
     tags: ['storytime', 'accessibility'],
@@ -18,7 +18,7 @@ const posts = [
   },
   {
     title: 'Handling async authentication flow in React with Redux & Redux-Saga',
-    to: 'posts/2',
+    to: '/blog/asynchronous',
     date: '30-06-2020',
     ttr: '11 min read',
     tags: ['react', 'redux'],
@@ -26,7 +26,7 @@ const posts = [
   },
   {
     title: 'Dark mode in a React app with Context and Styled-components',
-    to: 'posts/2',
+    to: '/blog/asynchronous',
     date: '22-05-2020',
     ttr: '7 min read',
     tags: ['react'],

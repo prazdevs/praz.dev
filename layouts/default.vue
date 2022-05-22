@@ -19,8 +19,13 @@ function toggleDark() {
         flex justify-between items-center
         px-3 mx-auto
       >
-        <NuxtLink gap-3 sm:gap-4 header-link to="/">
-          <div i-assets-mononoke text-2xl text-primary />
+        <NuxtLink class="group" gap-3 sm:gap-4 header-link to="/">
+          <div
+            i-assets-mononoke
+            text-2xl text-primary
+            motion-safe:group-hover-animate-spin
+            group-hover-animate-duration-2s
+          />
           <span sr-only sm:not-sr-only>
             {{ 'praz.dev' }}
           </span>
