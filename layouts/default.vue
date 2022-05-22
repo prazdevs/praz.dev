@@ -4,19 +4,6 @@ const color = useColorMode()
 function toggleDark() {
   color.preference = color.value === 'dark' ? 'light' : 'dark'
 }
-
-const links = [
-  {
-    label: 'posts',
-    to: '/posts',
-    icon: 'i-iconoir-page-flip',
-  },
-  {
-    label: 'projects',
-    to: '/projects',
-    icon: 'i-iconoir-light-bulb',
-  },
-]
 </script>
 
 <template>
@@ -39,18 +26,24 @@ const links = [
           </span>
         </NuxtLink>
         <ul flex-inline items-center gap-3 sm:gap-4>
-          <li
-            v-for="{ icon, label, to } in links"
-            :key="label"
-            flex items-center
-          >
+          <li flex items-center>
             <NuxtLink
               header-link
-              :to="to"
+              to="/posts"
               active-class="text-primary"
             >
-              <span sr-only sm:not-sr-only>{{ label }}</span>
-              <div display-block sm:display-none :class="icon" />
+              <span sr-only sm:not-sr-only>{{ 'posts' }}</span>
+              <div display-block sm:display-none i-iconoir-light-bulb />
+            </NuxtLink>
+          </li>
+          <li flex items-center>
+            <NuxtLink
+              header-link
+              to="/projects"
+              active-class="text-primary"
+            >
+              <span sr-only sm:not-sr-only>{{ 'projects' }}</span>
+              <div display-block sm:display-none i-iconoir-page-flip />
             </NuxtLink>
           </li>
           <li flex items-center>
@@ -65,7 +58,7 @@ const links = [
           </li>
           <li flex items-center>
             <button header-link @click="toggleDark">
-              <span sr-only>toggle theme</span>
+              <span sr-only>{{ 'toggle theme' }}</span>
               <div i-iconoir-sun-light dark:i-iconoir-moon-sat />
             </button>
           </li>
@@ -82,17 +75,29 @@ const links = [
     >
       <ul flex text-3xl gap-7>
         <li>
-          <NuxtLink to="https://twitter.com/prazdevs" target="_blank" header-link>
+          <NuxtLink
+            to="https://twitter.com/prazdevs"
+            target="_blank"
+            header-link
+          >
             <div i-iconoir-twitter />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="https://www.linkedin.com/in/sachabouillez/" target="_blank" header-link>
+          <NuxtLink
+            to="https://www.linkedin.com/in/sachabouillez/"
+            target="_blank"
+            header-link
+          >
             <div i-iconoir-linkedin />
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="https://github.com/prazdevs" target="_blank" header-link>
+          <NuxtLink
+            to="https://github.com/prazdevs"
+            target="_blank"
+            header-link
+          >
             <div i-iconoir-github />
           </NuxtLink>
         </li>
