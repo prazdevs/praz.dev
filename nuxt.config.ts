@@ -9,6 +9,8 @@ export default defineNuxtConfig({
   css: [
     '@fontsource/montserrat-alternates/400.css',
     '@fontsource/montserrat-alternates/500.css',
+    '@fontsource/montserrat-alternates/600.css',
+    '@fontsource/montserrat-alternates/700.css',
   ],
   experimental: {
     reactivityTransform: true,

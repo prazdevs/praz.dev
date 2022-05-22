@@ -7,11 +7,11 @@
         src="~/assets/imgs/sacha.webp"
       >
       <div flex flex-col items-start justify-center gap-2>
-        <h1 border-b-2 border-primary font-700 text-3xl sm:text-4xl>
+        <h1 h1-primary>
           {{ "Hey, I'm Sacha" }}
         </h1>
         <p text-lg>
-          Pragmatic developer, avid learner and frontend nerd.
+          {{ "Pragmatic developer, avid learner and frontend nerd." }}
         </p>
       </div>
     </div>
