@@ -9,12 +9,12 @@ const links = [
   {
     label: 'posts',
     to: '/posts',
-    icon: 'page-flip',
+    icon: 'i-iconoir-page-flip',
   },
   {
     label: 'projects',
     to: '/projects',
-    icon: 'light-bulb',
+    icon: 'i-iconoir-light-bulb',
   },
 ]
 </script>
@@ -50,7 +50,7 @@ const links = [
               active-class="text-primary"
             >
               <span sr-only sm:not-sr-only>{{ label }}</span>
-              <div display-block sm:display-none :class="`i-iconoir-${icon}`" />
+              <div display-block sm:display-none :class="icon" />
             </NuxtLink>
           </li>
           <li flex items-center>
