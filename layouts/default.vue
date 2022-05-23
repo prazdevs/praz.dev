@@ -85,6 +85,7 @@ function toggleDark() {
             header-link
           >
             <div i-iconoir-twitter />
+            <span sr-only>Twitter</span>
           </NuxtLink>
         </li>
         <li>
@@ -94,6 +95,7 @@ function toggleDark() {
             header-link
           >
             <div i-iconoir-linkedin />
+            <span sr-only>LinkedIn</span>
           </NuxtLink>
         </li>
         <li>
@@ -103,6 +105,7 @@ function toggleDark() {
             header-link
           >
             <div i-iconoir-github />
+            <span sr-only>GitHub</span>
           </NuxtLink>
         </li>
       </ul>
