@@ -5,5 +5,5 @@ const { data: surround } = await useAsyncData(`surround-${path}`, () => queryCon
 </script>
 
 <template>
-  <ContentRenderer :value="data" />
+  <ContentRenderer prose :value="data" />
 </template>
