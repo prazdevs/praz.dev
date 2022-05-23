@@ -79,6 +79,11 @@ const tags: Record<string, { label: string; color: string; icon: string }> = {
     color: colors.orange,
     icon: 'i-ion-accessibility',
   },
+  nuxt: {
+    label: 'Nuxt',
+    color: colors.green,
+    icon: 'i-simple-icons-nuxtdotjs',
+  },
 }
 </script>
 
