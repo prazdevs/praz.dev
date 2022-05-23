@@ -1,4 +1,3 @@
-import { readFile } from 'fs/promises'
 import {
   defineConfig,
   presetAttributify,
@@ -20,11 +19,6 @@ export default defineConfig({
     presetAttributify({ prefix: 'u:' }),
     presetIcons({
       scale: 1.2,
-      collections: {
-        assets: {
-          mononoke: () => readFile('assets/svgs/mononoke.svg', 'utf-8'),
-        },
-      },
     }),
   ],
   transformers: [transformerDirectives()],

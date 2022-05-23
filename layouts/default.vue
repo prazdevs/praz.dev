@@ -20,9 +20,8 @@ function toggleDark() {
         px-3 mx-auto
       >
         <NuxtLink class="group" gap-3 sm:gap-4 header-link to="/">
-          <div
-            i-assets-mononoke
-            text-2xl text-primary
+          <MaskIcon
+            h-2rem text-2xl text-primary
             motion-safe:group-hover-animate-spin
             group-hover-animate-duration-2s
           />
