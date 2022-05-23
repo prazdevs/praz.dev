@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <div>
     <div flex flex-col sm:flex-row gap-4 justify-center items-center mt-7>

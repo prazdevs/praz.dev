@@ -38,7 +38,7 @@ function toggleDark() {
               active-class="text-primary"
             >
               <span sr-only sm:not-sr-only>{{ 'posts' }}</span>
-              <div display-block sm:display-none i-iconoir-light-bulb />
+              <div display-block sm:display-none i-iconoir-page-flip />
             </NuxtLink>
           </li>
           <li flex items-center>
@@ -48,7 +48,7 @@ function toggleDark() {
               active-class="text-primary"
             >
               <span sr-only sm:not-sr-only>{{ 'projects' }}</span>
-              <div display-block sm:display-none i-iconoir-page-flip />
+              <div display-block sm:display-none i-iconoir-light-bulb />
             </NuxtLink>
           </li>
           <li flex items-center>
