@@ -4,7 +4,8 @@ const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
 
 <template>
   <div>
-    a11y
-    <ClientOnly>{{ reducedMotion }}</ClientOnly>
+    <ContentQuery v-slot="{ data }" path="posts" :only="['_id']">
+      <pre>{{ data }}</pre>
+    </ContentQuery>
   </div>
 </template>
