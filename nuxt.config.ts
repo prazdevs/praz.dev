@@ -2,10 +2,10 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
+    '@nuxt/content',
     '@nuxtjs/color-mode',
-    '@nuxt/content-edge',
+    '@unocss/nuxt',
+    '@vueuse/nuxt',
   ],
   css: [
     '@/assets/fonts/opendyslexic.css',
