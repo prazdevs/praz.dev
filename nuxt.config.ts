@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content-edge',
   ],
   css: [
+    '@/assets/fonts/opendyslexic.css',
     '@fontsource/montserrat-alternates/400.css',
     '@fontsource/montserrat-alternates/500.css',
     '@fontsource/montserrat-alternates/600.css',
