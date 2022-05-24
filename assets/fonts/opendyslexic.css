@@ -1,35 +1,40 @@
 @font-face {
-  font-family: OpenDyslexic;
+  font-family: 'OpenDyslexic';
+  font-display: swap;
   font-weight: 400 500;
   src: url('./opendyslexic-regular.woff2') format('woff2'),
        url('./opendyslexic-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: OpenDyslexic;
+  font-family: 'OpenDyslexic';
+  font-display: swap;
   font-weight: 600 700;
   src: url('./opendyslexic-bold.woff2') format('woff2'),
        url('./opendyslexic-bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: OpenDyslexic;
-  font-weight: 400 500;
+  font-family: 'OpenDyslexic';
+  font-display: swap;
   font-style: italic;
+  font-weight: 400 500;
   src: url('./opendyslexic-italic.woff2') format('woff2'),
        url('./opendyslexic-italic.woff') format('woff');
 }
 
 @font-face {
-  font-family: OpenDyslexic;
-  font-weight: 600 700;
+  font-family: 'OpenDyslexic';
+  font-display: swap;
   font-style: italic;
+  font-weight: 600 700;
   src: url('./opendyslexic-bold-italic.woff2') format('woff2'),
        url('./opendyslexic-bold-italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'OpenDyslexic Mono';
+  font-display: swap;
   src: url('./opendyslexic-mono.woff2') format('woff2'),
        url('./opendyslexic-mono.woff') format('woff');
 }
