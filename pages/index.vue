@@ -1,5 +1,10 @@
 <script setup lang="ts">
-
+const { data } = await useAsyncData('index', () =>
+  queryContent<{
+    title: string
+    description: string
+  }>().findOne(),
+)
 </script>
 
 <template>
@@ -12,10 +17,10 @@
       >
       <div flex flex-col items-start justify-center gap-2>
         <h1 h1-primary>
-          {{ "Hey, I'm Sacha" }}
+          {{ data.title }}
         </h1>
         <p text-lg>
-          {{ "Pragmatic developer, avid learner and frontend nerd." }}
+          {{ data.description }}
         </p>
       </div>
     </div>

@@ -1,16 +1,14 @@
 <script setup lang="ts">
-interface Project {
-  title: string
-  link: string
-  description: string
-  tags: Array<string>
-}
-
 const { data: projects } = await useAsyncData('projects', () =>
   queryContent<{
-    projects: Array<Project>
     title: string
     description: string
+    projects: Array<{
+      title: string
+      link: string
+      description: string
+      tags: Array<string>
+    }>
   }>('projects').findOne(),
 )
 </script>
