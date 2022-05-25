@@ -30,6 +30,6 @@ export default defineConfig({
     ['outline-primary', 'rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400'],
     ['border-primary', 'border-red-600 dark:border-red-400'],
     ['header-link', 'flex items-center hover-text-red-600 dark:hover-text-red-400 focus-visible:(rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400) motion-safe:transition-color'],
-    ['main-link', 'font-500 border-b-1 border-black dark:border-white hover-border-red-600 dark:hover-border-red-400 hover-text-red-600 dark:hover-text-red-400 focus-visible:(rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400) motion-safe:(transition-all hover-p-b-1)'],
+    ['main-link', 'font-500 border-b-1 border-black !no-underline dark:border-white hover-border-red-600 dark:hover-border-red-400 hover-text-red-600 dark:hover-text-red-400 focus-visible:(rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400) motion-safe:(transition-all hover-p-b-1)'],
   ],
 })
