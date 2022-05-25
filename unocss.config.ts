@@ -25,7 +25,7 @@ export default defineConfig({
   shortcuts: [
     ['main-container', 'max-w-992px'],
     ['h1-primary', 'text-3xl sm:text-4xl border-b-2 border-primary font-700'],
-    ['background-color', 'bg-white dark:bg-#1a202c dark:(text-white text-opacity-90) motion-safe:transition-background-color'],
+    ['background-color', 'bg-gray-100 dark:bg-#1a202c dark:(text-white text-opacity-90) motion-safe:transition-background-color'],
     ['text-primary', 'text-red-600 dark:text-red-400'],
     ['outline-primary', 'rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400'],
     ['border-primary', 'border-red-600 dark:border-red-400'],
