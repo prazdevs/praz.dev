@@ -1,10 +1,5 @@
 <script setup lang="ts">
-defineProps({
-  href: {
-    type: String,
-    default: '',
-  },
-})
+withDefaults(defineProps<{ href: string }>(), { href: '' })
 </script>
 
 <template>

@@ -2,34 +2,38 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.24.2
+  '@fontsource/indie-flower': ^4.5.8
   '@fontsource/montserrat': ^4.5.10
   '@fontsource/montserrat-alternates': ^4.5.8
-  '@fontsource/quicksand': ^4.5.9
   '@iconify-json/iconoir': ^1.1.6
   '@iconify-json/ion': ^1.1.1
   '@iconify-json/simple-icons': ^1.1.13
   '@nuxt/content': ^2.0.0
   '@nuxtjs/color-mode': ^3.0.3
+  '@pinia/nuxt': ^0.1.9
   '@unocss/nuxt': ^0.34.1
   '@vueuse/nuxt': ^8.5.0
   eslint: ^8.16.0
   nuxt: ^3.0.0-rc.3
+  pinia: ^2.0.14
   typescript: ^4.7.2
 
 devDependencies:
   '@antfu/eslint-config': 0.24.2_xztl6dhthcahlo6akmb2bmjmle
+  '@fontsource/indie-flower': 4.5.8
   '@fontsource/montserrat': 4.5.10
   '@fontsource/montserrat-alternates': 4.5.8
-  '@fontsource/quicksand': 4.5.9
   '@iconify-json/iconoir': 1.1.6
   '@iconify-json/ion': 1.1.1
   '@iconify-json/simple-icons': 1.1.13
   '@nuxt/content': 2.0.0
   '@nuxtjs/color-mode': 3.0.3
+  '@pinia/nuxt': 0.1.9_pinia@2.0.14
   '@unocss/nuxt': 0.34.1
   '@vueuse/nuxt': 8.5.0
   eslint: 8.16.0
   nuxt: 3.0.0-rc.3
+  pinia: 2.0.14_typescript@4.7.2
   typescript: 4.7.2
 
 packages:
@@ -471,16 +475,16 @@ packages:
       - supports-color
     dev: true
 
+  /@fontsource/indie-flower/4.5.8:
+    resolution: {integrity: sha512-75SuZkxFxVIeeU1ZJzuAnG76sXiBbDMwY9zJ26yAfCK95GJRYrdzDuIGCfsDrouK/Z5aO+AN7bkF8iEFoRXnHg==}
+    dev: true
+
   /@fontsource/montserrat-alternates/4.5.8:
     resolution: {integrity: sha512-TFa4YvbUVVaVUgk10p526terxuSuBmKko8WwWPZOLjPRCWehDGpvJC4/07+eK5pEYaOts/3xlyHxk56Y2nqZ4Q==}
     dev: true
 
   /@fontsource/montserrat/4.5.10:
     resolution: {integrity: sha512-JXe9wURwLFtPfrD3yYnfvue/Uv2L1iSEor4w6M5CcGO4iWSoaFgk7BPLUwksGD7ChKpGKpaNNLUt67VlCu2A1g==}
-    dev: true
-
-  /@fontsource/quicksand/4.5.9:
-    resolution: {integrity: sha512-8n4gRTtdG3Ge4HLYKdNPklnXfNCo080uno3/HsQo7yVXIOHkTM1WSQopKl4gfI8o8IpUeNv0ak5OuaVHqAhlrw==}
     dev: true
 
   /@humanwhocodes/config-array/0.9.5:
@@ -958,6 +962,18 @@ packages:
       - supports-color
       - vite
       - webpack
+    dev: true
+
+  /@pinia/nuxt/0.1.9_pinia@2.0.14:
+    resolution: {integrity: sha512-5YmfBOxXHM5eA5pE4mq5opJnSmVYn2qYJ2ak01FrCww0esxfRLkmuu4emynu0Ar5eQ/DDz9wI3ukgRwAubXqmg==}
+    peerDependencies:
+      pinia: '>=2.0.14'
+    dependencies:
+      pinia: 2.0.14_typescript@4.7.2
+      vue-demi: 0.12.5
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
     dev: true
 
   /@polka/url/1.0.0-next.21:
@@ -5799,6 +5815,23 @@ packages:
   /pify/2.3.0:
     resolution: {integrity: sha1-7RQaasBDqEnqWISY59yosVMw6Qw=}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /pinia/2.0.14_typescript@4.7.2:
+    resolution: {integrity: sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      typescript: 4.7.2
+      vue-demi: 0.12.5
     dev: true
 
   /pkg-types/0.3.2:

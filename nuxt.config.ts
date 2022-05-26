@@ -4,11 +4,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/color-mode',
+    '@pinia/nuxt',
     '@unocss/nuxt',
     '@vueuse/nuxt',
   ],
   css: [
     '@/assets/fonts/opendyslexic.css',
+    '@fontsource/indie-flower',
     '@fontsource/montserrat-alternates/400.css',
     '@fontsource/montserrat-alternates/500.css',
     '@fontsource/montserrat-alternates/600.css',
@@ -22,5 +24,8 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: '',
+  },
+  content: {
+    highlight: { theme: 'dracula' },
   },
 })

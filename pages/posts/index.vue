@@ -5,7 +5,7 @@ const { data: posts } = await useAsyncData('post-list', () =>
   queryContent('posts')
     .where({ _empty: { $eq: false }, _id: { $regex: /\d+.*/i } })
     .sort({ _id: 0 })
-    .only(['title', 'tags', 'date', 'description', '_path'])
+    // .only(['title', 'tags', 'date', 'description', '_path'])
     .find(),
 )
 </script>

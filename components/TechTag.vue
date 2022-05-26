@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ tech: string }>()
+const props = defineProps<{ tech: string }>()
 
 const colors = {
   yellow: 'text-yellow-700 bg-yellow-300 dark:text-yellow-200',
@@ -85,17 +85,21 @@ const tags: Record<string, { label: string; color: string; icon: string }> = {
     icon: 'i-simple-icons-nuxtdotjs',
   },
 }
+
+const label = computed(() => tags[props.tech]?.label ?? props.tech)
+const color = computed(() => tags[props.tech]?.color ?? colors.gray)
+const icon = computed(() => tags[props.tech]?.icon ?? '')
 </script>
 
 <template>
   <span
-    :class="tags[tech].color"
+    :class="color"
     bg-opacity-20
     text-xs font-500
     inline-flex items-center
     gap-5px px-2 py-1 rounded-4px
   >
-    <span inline-flex :class="tags[tech].icon" />
-    <span>{{ tags[tech].label }}</span>
+    <span inline-flex :class="icon" />
+    <span>{{ label }}</span>
   </span>
 </template>
