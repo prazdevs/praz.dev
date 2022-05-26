@@ -5,7 +5,7 @@ const rm = useMediaQuery('(prefers-reduced-motion: reduce)')
 <template>
   <div>
     <ClientOnly>
-      <div v-if="rm" text-red-500>
+      <div v-if="rm" text-red-600 dark:text-red-500 flex items-center>
         <span text-lg inline-block mr-1 i-iconoir-delete-circled-outline />
         <span>{{ 'Animations are disabled.' }}</span>
       </div>
