@@ -17,7 +17,7 @@ const od = useOpenDyslexic()
         w-4
         h-4
         rounded-full
-        transition
+        motion-safe:transition
         z-3
       />
     </div>

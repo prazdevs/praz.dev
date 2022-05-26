@@ -24,9 +24,10 @@ const { formatDate } = useDate()
           <span inline-flex i-iconoir-calendar />
           <span>{{ formatDate(data.date) }}</span>
         </div>
-        <div inline-flex items-center gap-2>
-          <span inline-flex i-iconoir-calendar />
-          <span>{{ formatDate(data.date) }}</span>
+        <div flex items-center gap-2>
+          <div i-iconoir-wristwatch inline-flex />
+          <span inline sm:hidden>{{ `${data.ttr}'` }}</span>
+          <span sm:inline hidden>{{ `${data.ttr} min read` }}</span>
         </div>
       </div>
       <ContentRenderer :value="data" />

@@ -48,6 +48,11 @@ const { data: posts } = await useAsyncData('post-list', () =>
             <div i-iconoir-calendar inline-flex />
             <span>{{ formatDate(post.date) }}</span>
           </div>
+          <div flex items-center gap-1>
+            <div i-iconoir-wristwatch inline-flex />
+            <span inline sm:hidden>{{ `${post.ttr}'` }}</span>
+            <span sm:inline hidden>{{ `${post.ttr} min read` }}</span>
+          </div>
         </div>
         <div inline-flex gap-2 flex-wrap>
           <TechTag v-for="tag in post.tags" :key="tag" :tech="tag" />

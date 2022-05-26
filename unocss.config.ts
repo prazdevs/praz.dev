@@ -33,6 +33,7 @@ export default defineConfig({
   shortcuts: [
     ['main-container', 'max-w-992px'],
     ['h1-primary', 'text-3xl sm:text-4xl border-b-2 border-primary font-700'],
+    ['h2-primary', 'text-3xl font-600'],
     ['background-color', 'bg-gray-100 dark:bg-#1a202c dark:(text-white text-opacity-90) motion-safe:transition-background-color'],
     ['text-primary', 'text-red-600 dark:text-red-400'],
     ['background-primary', 'bg-red-600 dark:bg-red-400'],

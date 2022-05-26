@@ -124,7 +124,7 @@ function toggleDark() {
           </NuxtLink>
           <span>.</span>
         </p>
-        <p>
+        <p text-center>
           <span font-sans>{{ '©' }}</span>
           <span>
             {{ `${new Date().getFullYear()} — Sacha 'PraZ' Bouillez` }}

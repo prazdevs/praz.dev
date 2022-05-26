@@ -1,0 +1,27 @@
+title: About accessibility
+
+description: >
+  I value accessibility a lot in everything I do, and will try my best to as as inclusive as possible.
+  You will find here some settings and resources regarding accessibility.
+
+open-dyslexic: >
+  If you are subject to dyslexia or are having trouble reading with the default font, this will let you use OpenDyslexic,
+  a font specifically designed to increase readability for dyslexic users:
+
+animations: >
+  If you are prone to motion sickness or simply don't want any kind of animations while browsing this website,
+  it is fully compliant with the 'prefers-reduced-motion' media query. If you have animations disabled in your operating
+  system settings, they will be disabled here as well!
+
+resources:
+  description: >
+    Here are some useful resources for things about a11y:
+  sites:
+    - name: The a11y project
+      link: https://www.a11yproject.com/
+    - name: MDN a11y
+      link: https://developer.mozilla.org/en-US/docs/Web/Accessibility
+    - name: ARIA Authoring Practices Guide
+      link: https://www.w3.org/WAI/ARIA/apg/
+    - name: DWP Accessibility Manual
+      link: https://accessibility-manual.dwp.gov.uk/
