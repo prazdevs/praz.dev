@@ -13,7 +13,7 @@
           :key="project.title"
           flex
           flex-col
-          gap-2
+          gap-3
           not-last:border-b-1
           not-last-pb-6
           not-first-pt-6
@@ -28,7 +28,9 @@
               leading-relaxed
               sm:leading-loose
             >
-              {{ project.title }}
+              <span>{{ project.title }}</span>
+              <span ml-1 text-xs i-iconoir-open-new-window inline-block />
+              <span sr-only>{{ 'opens in a new tab' }}</span>
             </NuxtLink>
           </h2>
           <div inline-flex gap-2 flex-wrap>

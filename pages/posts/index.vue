@@ -30,7 +30,7 @@ const { data: posts } = await useAsyncData('post-list', () =>
       <div
         v-for="post in posts"
         :key="post.title"
-        flex flex-col gap-2
+        flex flex-col gap-3
         not-last:border-b-1 not-last-pb-6 not-first-pt-6
       >
         <h2>
