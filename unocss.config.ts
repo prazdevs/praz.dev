@@ -19,6 +19,7 @@ export default defineConfig({
       sans: 'Montserrat Alternates',
       script: 'Indie Flower',
       dyslexic: 'OpenDyslexic',
+      monodyslexic: 'OpenDyslexic Mono',
     },
   },
   presets: [

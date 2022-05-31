@@ -28,7 +28,7 @@ html.light {
   --shiki-token-string: #c96765;
   --shiki-token-comment: #939dbb;
   --shiki-token-keyword: #994cc3;
-  --shiki-token-parameter: #AA0000;
+  --shiki-token-parameter: #0c969b;
   --shiki-token-function: #4876d6;
   --shiki-token-string-expression: #c96765;
   --shiki-token-punctuation: #333333;
@@ -47,5 +47,14 @@ html.dark {
   --shiki-token-string-expression: #ecc48d;
   --shiki-token-punctuation: #ffffff;
   --shiki-token-link: #ecc48d;
+}
+
+code {
+  font-family: inherit;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
 }
 </style>
