@@ -26,6 +26,8 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   content: {
-    highlight: { theme: 'dracula' },
+    highlight: {
+      theme: 'css-variables',
+    },
   },
 })
