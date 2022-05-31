@@ -16,6 +16,7 @@ specifiers:
   eslint: ^8.16.0
   nuxt: ^3.0.0-rc.3
   pinia: ^2.0.14
+  sitemap: ^7.1.1
   typescript: ^4.7.2
 
 devDependencies:
@@ -34,6 +35,7 @@ devDependencies:
   eslint: 8.16.0
   nuxt: 3.0.0-rc.3
   pinia: 2.0.14_typescript@4.7.2
+  sitemap: 7.1.1
   typescript: 4.7.2
 
 packages:
@@ -1153,6 +1155,12 @@ packages:
       '@types/node': 17.0.35
     dev: true
 
+  /@types/sax/1.2.4:
+    resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
+    dependencies:
+      '@types/node': 17.0.35
+    dev: true
+
   /@types/tough-cookie/4.0.2:
     resolution: {integrity: sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==}
     dev: true
@@ -1804,6 +1812,10 @@ packages:
     dependencies:
       delegates: 1.0.0
       readable-stream: 3.6.0
+    dev: true
+
+  /arg/5.0.1:
+    resolution: {integrity: sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA==}
     dev: true
 
   /argparse/2.0.1:
@@ -6733,6 +6745,17 @@ packages:
       '@polka/url': 1.0.0-next.21
       mrmime: 1.0.0
       totalist: 3.0.0
+    dev: true
+
+  /sitemap/7.1.1:
+    resolution: {integrity: sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg==}
+    engines: {node: '>=12.0.0', npm: '>=5.6.0'}
+    hasBin: true
+    dependencies:
+      '@types/node': 17.0.35
+      '@types/sax': 1.2.4
+      arg: 5.0.1
+      sax: 1.2.4
     dev: true
 
   /slash/3.0.0:
