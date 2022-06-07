@@ -10,13 +10,14 @@ function toggleDark() {
 <template>
   <div :u:font="od.openDyslexic ? 'dyslexic' : 'sans'">
     <header
-      pos-fixed top-0 left-0 right-0 z-1
-      w-full h-3rem sm:h-4rem border-b
+      w-full border-b
       text-xl
       background-color
     >
+      <PrideBanner />
       <nav
-        main-container h-full
+        h-3rem sm:h-4rem
+        main-container
         flex justify-between items-center
         px-3 mx-auto
       >
@@ -70,7 +71,7 @@ function toggleDark() {
         </ul>
       </nav>
     </header>
-    <main main-container w-full mx-auto mt-3rem sm:mt-4rem p-4>
+    <main main-container w-full mx-auto p-4>
       <slot />
     </main>
     <footer

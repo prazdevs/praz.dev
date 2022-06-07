@@ -31,6 +31,10 @@ export default defineConfig({
     }),
   ],
   transformers: [transformerDirectives()],
+  rules: [
+    ['text-shadow-black', { 'text-shadow': '0 0 2px black' }],
+    ['text-shadow-white', { 'text-shadow': '0 0 2px white' }],
+  ],
   shortcuts: [
     ['main-container', 'max-w-992px'],
     ['h1-primary', 'text-3xl sm:text-4xl border-b-2 border-primary font-700'],
