@@ -16,9 +16,6 @@ export default defineNuxtConfig({
     '@fontsource/montserrat-alternates/600.css',
     '@fontsource/montserrat-alternates/700.css',
   ],
-  experimental: {
-    reactivityTransform: true,
-  },
   unocss: {
     preflight: true,
   },
