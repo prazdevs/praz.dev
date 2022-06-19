@@ -25,7 +25,7 @@ function toggleDark() {
           <MaskIcon
             h-2rem text-2xl text-primary
             motion-safe:group-hover-animate-spin
-            group-hover-animate-duration-2s
+            motion-safe:group-hover-animate-duration-2s
           />
           <span sr-only sm:not-sr-only>
             {{ 'praz.dev' }}

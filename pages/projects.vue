@@ -1,6 +1,7 @@
 <template>
   <div flex flex-col gap-7 mt-4 sm:mt-7>
     <ContentQuery v-slot="{ data }" path="projects" find="one">
+    <Metadata :title="data.title" :description="data.description" />
       <div flex flex-col gap-4>
         <h1 h1-primary mr-auto>
           {{ data.title }}

@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { formatDate } = useDate()
-</script>
-
 <template>
   <div flex flex-col gap-7 mt-4 sm:mt-7>
     <div flex flex-col gap-4>
@@ -12,6 +8,7 @@ const { formatDate } = useDate()
         :only="['title', 'description']"
         :where="{ _id: { $regex: 'posts:index' } }"
       >
+        <Metadata :title="title" :description="description" />
         <h1 h1-primary mr-auto>
           {{ title }}
         </h1>
@@ -39,7 +36,7 @@ const { formatDate } = useDate()
           <div flex gap-3>
             <div flex items-center gap-1>
               <div i-iconoir-calendar inline-flex />
-              <span>{{ formatDate(post.date) }}</span>
+              <span>{{ useDate(post.date) }}</span>
             </div>
             <div flex items-center gap-1>
               <div i-iconoir-wristwatch inline-flex />

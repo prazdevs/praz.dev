@@ -1,10 +1,7 @@
-<script setup lang="ts">
-const { formatDate } = useDate()
-</script>
-
 <template>
   <div>
     <ContentQuery v-slot="{ data }" :path="$route.path" find="one">
+      <Metadata :title="data.title" />
       <h1 text-4xl text-center font-600 mb-3 mt-4 sm:mt-7>
         {{ data.title }}
       </h1>
@@ -22,7 +19,7 @@ const { formatDate } = useDate()
       >
         <div inline-flex items-center gap-2>
           <span inline-flex i-iconoir-calendar />
-          <span>{{ formatDate(data.date) }}</span>
+          <span>{{ useDate(data.date) }}</span>
         </div>
         <div flex items-center gap-2>
           <div i-iconoir-wristwatch inline-flex />

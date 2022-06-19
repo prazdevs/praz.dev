@@ -2,6 +2,7 @@
   <div flex flex-col gap-7 mt-4 sm:mt-7>
     <div flex flex-col sm:flex-row gap-4 justify-center items-center>
       <ContentQuery v-slot="{ data }" path="home" find="one">
+        <Metadata />
         <img
           border-2
           border-primary
@@ -9,7 +10,7 @@
           h-7rem
           w-7rem
           src="~/assets/imgs/sacha.webp"
-        >
+        />
         <div flex flex-col items-center sm:items-start justify-center gap-2>
           <h1 h1-primary>
             {{ data.title }}
