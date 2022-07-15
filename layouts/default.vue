@@ -14,7 +14,6 @@ function toggleDark() {
       text-xl
       background-color
     >
-      <PrideBanner />
       <nav
         h-3rem sm:h-4rem
         main-container
