@@ -4,13 +4,14 @@
       <ContentQuery v-slot="{ data }" path="home" find="one">
         <Metadata />
         <img
+          alt="Picture of me, Sacha, with red hair and glasses"
           border-2
           border-primary
           rounded-full
           h-7rem
           w-7rem
           src="~/assets/imgs/sacha.webp"
-        />
+        >
         <div flex flex-col items-center sm:items-start justify-center gap-2>
           <h1 h1-primary>
             {{ data.title }}
