@@ -6,10 +6,11 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
-    "start": "node .output/server/index.mjs",
-    "preview": "nuxt preview",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install",
+    "preview": "nuxi preview",
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
@@ -25,6 +26,8 @@
     "@unocss/nuxt": "^0.45.26",
     "@vueuse/nuxt": "^9.3.0",
     "eslint": "^8.24.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "nuxt": "3.0.0-rc.11",
     "pinia": "^2.0.22",
     "sitemap": "^7.1.1",
@@ -41,5 +44,8 @@
         "vue"
       ]
     }
+  },
+  "lint-staged": {
+    "*.{ts,vue}": "eslint --fix"
   }
 }
