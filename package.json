@@ -1,14 +1,15 @@
 {
   "name": "praz.dev",
-  "description": "My personal dev blog built with Nuxt.",
   "private": true,
+  "description": "My personal dev blog built with Nuxt.",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
     "start": "node .output/server/index.mjs",
     "preview": "nuxt preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
