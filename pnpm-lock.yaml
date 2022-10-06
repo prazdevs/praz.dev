@@ -7,14 +7,14 @@ specifiers:
   '@fontsource/montserrat-alternates': ^4.5.11
   '@iconify-json/iconoir': ^1.1.11
   '@iconify-json/ion': ^1.1.4
-  '@iconify-json/simple-icons': ^1.1.28
+  '@iconify-json/simple-icons': ^1.1.29
   '@nuxt/content': ^2.1.1
-  '@nuxtjs/color-mode': ^3.1.6
+  '@nuxtjs/color-mode': ^3.1.7
   '@pinia/nuxt': ^0.4.2
   '@unocss/nuxt': ^0.45.26
   '@vueuse/nuxt': ^9.3.0
   eslint: ^8.24.0
-  husky: ^8.0.0
+  husky: ^8.0.1
   lint-staged: ^13.0.3
   nuxt: 3.0.0-rc.11
   pinia: ^2.0.22
@@ -28,9 +28,9 @@ devDependencies:
   '@fontsource/montserrat-alternates': 4.5.11
   '@iconify-json/iconoir': 1.1.11
   '@iconify-json/ion': 1.1.4
-  '@iconify-json/simple-icons': 1.1.28
+  '@iconify-json/simple-icons': 1.1.29
   '@nuxt/content': 2.1.1
-  '@nuxtjs/color-mode': 3.1.6
+  '@nuxtjs/color-mode': 3.1.7
   '@pinia/nuxt': 0.4.2_typescript@4.8.4
   '@unocss/nuxt': 0.45.26
   '@vueuse/nuxt': 9.3.0_nuxt@3.0.0-rc.11
@@ -537,8 +537,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/simple-icons/1.1.28:
-    resolution: {integrity: sha512-8uMPiCEV/T17YIh/ADWJWwmJsoFljxYoa8Hu/hQKthtiOCtWnyKSqONcILzbaAmeAoldm1aom64WVknbnpxg3A==}
+  /@iconify-json/simple-icons/1.1.29:
+    resolution: {integrity: sha512-uP4fKlNoh9IuVTf1e1bl0TWZs+IDE19zCpKLNy+bKmJL5F9zOPwiIMqSsg4KRPXSdoZ2x7lTtt9BrO/O/3Phyg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -955,8 +955,8 @@ packages:
       - webpack
     dev: true
 
-  /@nuxtjs/color-mode/3.1.6:
-    resolution: {integrity: sha512-vTjlWCw+KHK9XLaiUWRPLhRGtiqkNm1RxW2GnzXaKlMONaruACtsrbJMRiwa/NB4G17uH+3pIri9z7ozADkgEw==}
+  /@nuxtjs/color-mode/3.1.7:
+    resolution: {integrity: sha512-+jnGPvmwQJ5jrE4akIX/Efz6fhU9wznysj5V2CK5+I5HhW7UfmwLOMxfOH8Wjho189QFMlO/l1Wufg8c3zonbg==}
     dependencies:
       '@nuxt/kit': 3.0.0-rc.11
       lodash.template: 4.5.0
@@ -7402,7 +7402,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.3
       mlly: 0.5.14
-      pathe: 0.3.7
+      pathe: 0.3.8
       scule: 0.3.2
       strip-literal: 0.4.1
       unplugin: 0.9.5
@@ -7422,7 +7422,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.3
       mlly: 0.5.14
-      pathe: 0.3.7
+      pathe: 0.3.8
       scule: 0.3.2
       strip-literal: 0.4.1
       unplugin: 0.9.5_smomlxmjgt6y4akd764agnhchu
@@ -7442,7 +7442,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.3
       mlly: 0.5.14
-      pathe: 0.3.7
+      pathe: 0.3.8
       scule: 0.3.2
       strip-literal: 0.4.1
       unplugin: 0.9.5_yrghuvd3zkjqr2aqvquijs2oqu
