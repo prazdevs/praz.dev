@@ -10,7 +10,6 @@ specifiers:
   '@iconify-json/simple-icons': ^1.1.29
   '@nuxt/content': ^2.1.1
   '@nuxtjs/color-mode': ^3.1.7
-  '@nuxtjs/web-vitals': ^0.1.10
   '@pinia/nuxt': ^0.4.2
   '@unocss/nuxt': ^0.45.26
   '@vueuse/nuxt': ^9.3.0
@@ -21,9 +20,6 @@ specifiers:
   pinia: ^2.0.22
   sitemap: ^7.1.1
   typescript: ^4.8.4
-
-dependencies:
-  '@nuxtjs/web-vitals': 0.1.10
 
 devDependencies:
   '@antfu/eslint-config': 0.27.0_ypn2ylkkyfa5i233caldtndbqa
@@ -972,14 +968,6 @@ packages:
       - vite
       - webpack
     dev: true
-
-  /@nuxtjs/web-vitals/0.1.10:
-    resolution: {integrity: sha512-Sf8v7BUB+Bfmao6AioPRmSpyq/MMvq0tFwFiXVe2oL9HgdDgu+6sfcSBDnvzmgcEQPfPZp1KCxc5N2vNERem0w==}
-    dependencies:
-      defu: 6.1.0
-      ufo: 0.8.5
-      web-vitals: 2.1.4
-    dev: false
 
   /@pinia/nuxt/0.4.2_typescript@4.8.4:
     resolution: {integrity: sha512-yPrJVFOTVDsCcwzVvElLmSFB6IKWo+0WpVmVPCZyj/LD2uNYBK8I3lTPHdZ4q/VS2Sj8LkA7aq6S8PFpwguQ0A==}
@@ -2624,6 +2612,7 @@ packages:
 
   /defu/6.1.0:
     resolution: {integrity: sha512-pOFYRTIhoKujrmbTRhcW5lYQLBXw/dlTwfI8IguF1QCDJOcJzNH1w+YFjxqy6BAuJrClTy6MUE8q+oKJ2FLsIw==}
+    dev: true
 
   /delegates/1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
@@ -7331,6 +7320,7 @@ packages:
 
   /ufo/0.8.5:
     resolution: {integrity: sha512-e4+UtA5IRO+ha6hYklwj6r7BjiGMxS0O+UaSg9HbaTefg4kMkzj4tXzEBajRR+wkxf+golgAWKzLbytCUDMJAA==}
+    dev: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -7942,9 +7932,6 @@ packages:
     resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
     engines: {node: '>= 8'}
     dev: true
-
-  /web-vitals/2.1.4:
-    resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
