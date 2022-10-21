@@ -25,4 +25,7 @@ export default defineNuxtConfig({
       theme: 'css-variables',
     },
   },
+  nitro: {
+    preset: 'netlify',
+  },
 })
