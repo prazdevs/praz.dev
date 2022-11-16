@@ -10,6 +10,6 @@ const od = useOpenDyslexic();
     rounded-sm
     :u:font="od.openDyslexic ? 'monodyslexic' : 'mono'"
   >
-    <Markdown :use="$slots.default" />
+    <ContentSlot :use="$slots.default" />
   </span>
 </template>

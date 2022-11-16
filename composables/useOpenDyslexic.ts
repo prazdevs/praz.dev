@@ -1,7 +1,10 @@
 import { defineStore } from 'pinia'
 
 export const useOpenDyslexic = defineStore('open-dyslexic', () => {
-  const openDyslexic = useCookie('open-dyslexic', { default: () => false })
+  const openDyslexic = useCookie('open-dyslexic', {
+    default: () => false,
+    sameSite: true,
+  })
 
   return { openDyslexic }
 })

@@ -13,7 +13,7 @@ withDefaults(defineProps<{ src: string; alt?: string }>(), { alt: "" });
       decoding="async"
     />
     <figcaption italic text-sm mt-1>
-      <Markdown :use="$slots.caption" unwrap="p" />
+      <ContentSlot :use="$slots.caption" unwrap="p" />
     </figcaption>
   </figure>
 </template>

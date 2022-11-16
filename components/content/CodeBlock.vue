@@ -28,6 +28,6 @@ const od = useOpenDyslexic();
     >
       {{ title }}
     </div>
-    <Markdown :use="$slots.default" />
+    <ContentSlot :use="$slots.default" />
   </div>
 </template>
