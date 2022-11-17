@@ -10,7 +10,9 @@
           rounded-full
           h-7rem
           w-7rem
-          src="~/assets/imgs/sacha.webp"
+          src="/imgs/sacha.jpg"
+          height="200px"
+          width="200px"
         >
         <div flex flex-col items-center sm:items-start justify-center gap-2>
           <h1 h1-primary>

@@ -7,7 +7,7 @@ withDefaults(defineProps<{ src: string; alt?: string }>(), { alt: "" });
     <img
       w-full
       max-w-600px
-      :src="`../content/${src}`"
+      :src="`/content/${src}`"
       :alt="alt"
       loading="lazy"
       decoding="async"

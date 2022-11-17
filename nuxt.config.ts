@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@nuxt/image-edge',
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
     '@unocss/nuxt',

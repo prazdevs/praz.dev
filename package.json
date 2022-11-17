@@ -21,6 +21,7 @@
     "@iconify-json/ion": "^1.1.4",
     "@iconify-json/simple-icons": "^1.1.34",
     "@nuxt/content": "^2.2.2",
+    "@nuxt/image-edge": "1.0.0-27809804.194d2d6",
     "@nuxtjs/color-mode": "^3.1.8",
     "@pinia/nuxt": "^0.4.4",
     "@unocss/nuxt": "^0.46.5",
