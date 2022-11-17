@@ -26,8 +26,6 @@
     "@unocss/nuxt": "^0.46.5",
     "@vueuse/nuxt": "^9.5.0",
     "eslint": "^8.27.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
     "nuxt": "3.0.0",
     "pinia": "^2.0.24",
     "sitemap": "^7.1.1",
@@ -44,8 +42,5 @@
         "vue"
       ]
     }
-  },
-  "lint-staged": {
-    "*.{ts,vue}": "eslint --fix"
   }
 }
