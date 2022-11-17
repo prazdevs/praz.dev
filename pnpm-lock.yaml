@@ -11,6 +11,7 @@ specifiers:
   '@nuxt/content': ^2.2.2
   '@nuxt/image-edge': 1.0.0-27809804.194d2d6
   '@nuxtjs/color-mode': ^3.1.8
+  '@nuxtjs/robots': ^3.0.0-2
   '@pinia/nuxt': ^0.4.4
   '@unocss/nuxt': ^0.46.5
   '@vueuse/nuxt': ^9.5.0
@@ -31,6 +32,7 @@ devDependencies:
   '@nuxt/content': 2.2.2
   '@nuxt/image-edge': 1.0.0-27809804.194d2d6
   '@nuxtjs/color-mode': 3.1.8
+  '@nuxtjs/robots': 3.0.0-2
   '@pinia/nuxt': 0.4.4_typescript@4.9.3
   '@unocss/nuxt': 0.46.5
   '@vueuse/nuxt': 9.5.0_nuxt@3.0.0
@@ -1089,6 +1091,16 @@ packages:
       - supports-color
       - vite
       - webpack
+    dev: true
+
+  /@nuxtjs/robots/3.0.0-2:
+    resolution: {integrity: sha512-UuMrmxReyfhZtrMbocS0pVYKma1sxPKw30F7z2pmE9dPs1CW8rU3gtAH3xvScwWAKgepkwXPvt8UsB+QL/EGKg==}
+    dependencies:
+      '@nuxt/kit': 3.0.0
+      h3: 0.8.6
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@pinia/nuxt/0.4.4_typescript@4.9.3:
