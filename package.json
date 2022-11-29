@@ -12,7 +12,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.31.0",
+    "@antfu/eslint-config": "^0.31.1",
     "@fontsource/indie-flower": "^4.5.10",
     "@fontsource/montserrat": "^4.5.13",
     "@fontsource/montserrat-alternates": "^4.5.11",
@@ -26,7 +26,7 @@
     "@pinia/nuxt": "^0.4.4",
     "@unocss/nuxt": "^0.46.5",
     "@vueuse/nuxt": "^9.5.0",
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "nuxt": "3.0.0",
     "pinia": "^2.0.24",
     "sitemap": "^7.1.1",
