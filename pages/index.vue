@@ -3,7 +3,7 @@
     <div flex flex-col sm:flex-row gap-4 justify-center items-center>
       <ContentQuery v-slot="{ data }" path="home" find="one">
         <Metadata />
-        <NuxtImg
+        <img
           alt="Picture of me, Sacha, with red hair and glasses"
           border-2
           border-primary
@@ -13,7 +13,7 @@
           src="/imgs/sacha.jpg"
           height="300px"
           width="300px"
-        />
+        >
         <div flex flex-col items-center sm:items-start justify-center gap-2>
           <h1 h1-primary>
             {{ data.title }}
