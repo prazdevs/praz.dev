@@ -11,6 +11,7 @@ withDefaults(defineProps<{ src: string; alt?: string }>(), { alt: "" });
       :alt="alt"
       loading="lazy"
       decoding="async"
+      width="600px"
     />
     <figcaption italic text-sm mt-1>
       <ContentSlot :use="$slots.caption" unwrap="p" />
