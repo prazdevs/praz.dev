@@ -27,4 +27,7 @@ export default defineNuxtConfig({
       theme: 'css-variables',
     },
   },
+  image: {
+    provider: 'ipx',
+  },
 })
