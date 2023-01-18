@@ -13,7 +13,7 @@ specifiers:
   '@iconify-json/simple-icons': ^1.1.40
   '@nuxt/content': ^2.3.0
   '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
-  '@nuxtjs/color-mode': 3.2.0
+  '@nuxtjs/color-mode': ^3.2.0
   '@nuxtjs/fontaine': ^0.2.4
   '@nuxtjs/robots': ^3.0.0
   '@unocss/nuxt': ^0.48.4
