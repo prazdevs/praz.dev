@@ -4,16 +4,14 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     // '@nuxtjs/robots',
     '@nuxtjs/color-mode',
+    '@nuxtjs/fontaine',
     '@unocss/nuxt',
     '@vueuse/nuxt',
   ],
   css: [
     '@fontsource/indie-flower',
     '@fontsource/mononoki',
-    '@fontsource/montserrat-alternates/400.css',
-    '@fontsource/montserrat-alternates/500.css',
-    '@fontsource/montserrat-alternates/600.css',
-    '@fontsource/montserrat-alternates/700.css',
+    '@fontsource/montserrat-alternates',
   ],
   unocss: {
     preflight: true,
