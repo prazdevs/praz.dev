@@ -7,7 +7,7 @@ function toggleDark() {
 </script>
 
 <template>
-  <div font-sans>
+  <div font-sans leading-relaxed>
     <header
       w-full border-b
       text-xl

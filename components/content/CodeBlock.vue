@@ -10,6 +10,7 @@ defineProps<{ title?: string }>();
     rounded-20px
     border-2
     dark:border-0
+    leading-normal
   >
     <div
       v-if="title"
