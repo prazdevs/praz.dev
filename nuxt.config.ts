@@ -2,15 +2,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/image-edge',
-    '@nuxtjs/robots',
+    // '@nuxtjs/robots',
     '@nuxtjs/color-mode',
-    '@pinia/nuxt',
     '@unocss/nuxt',
     '@vueuse/nuxt',
   ],
   css: [
-    '@/assets/fonts/opendyslexic.css',
     '@fontsource/indie-flower',
+    '@fontsource/mononoki',
     '@fontsource/montserrat-alternates/400.css',
     '@fontsource/montserrat-alternates/500.css',
     '@fontsource/montserrat-alternates/600.css',

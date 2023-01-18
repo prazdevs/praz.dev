@@ -18,8 +18,7 @@ export default defineConfig({
     fontFamily: {
       sans: 'Montserrat Alternates',
       script: 'Indie Flower',
-      dyslexic: 'OpenDyslexic',
-      monodyslexic: 'OpenDyslexic Mono',
+      mono: 'Mononoki',
     },
   },
   presets: [

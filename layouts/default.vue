@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-const od = useOpenDyslexic()
 const color = useColorMode()
 
 function toggleDark() {
@@ -8,7 +7,7 @@ function toggleDark() {
 </script>
 
 <template>
-  <div :u:font="od.openDyslexic ? 'dyslexic' : 'sans'">
+  <div font-sans>
     <header
       w-full border-b
       text-xl
@@ -49,16 +48,6 @@ function toggleDark() {
             >
               <span sr-only sm:not-sr-only>{{ 'projects' }}</span>
               <div display-block sm:display-none i-iconoir-light-bulb />
-            </NuxtLink>
-          </li>
-          <li flex items-center>
-            <NuxtLink
-              header-link
-              to="/a11y"
-              active-class="text-primary"
-            >
-              <span sr-only>{{ 'accessibility' }}</span>
-              <div i-iconoir-accessibility />
             </NuxtLink>
           </li>
           <li flex items-center>

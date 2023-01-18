@@ -13,7 +13,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.0",
+    "@fontsource/anonymous-pro": "^4.5.9",
+    "@fontsource/atkinson-hyperlegible": "^4.5.11",
     "@fontsource/indie-flower": "^4.5.10",
+    "@fontsource/mononoki": "^4.5.3",
     "@fontsource/montserrat": "^4.5.13",
     "@fontsource/montserrat-alternates": "^4.5.11",
     "@iconify-json/iconoir": "^1.1.15",
@@ -23,7 +26,6 @@
     "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/robots": "^3.0.0",
-    "@pinia/nuxt": "^0.4.6",
     "@unocss/nuxt": "^0.47.6",
     "@vueuse/nuxt": "^9.7.0",
     "eslint": "^8.30.0",
