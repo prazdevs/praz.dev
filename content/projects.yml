@@ -16,7 +16,6 @@ projects:
       - vuejs
       - typescript
       - vite
-      - cypress
   - title: praz.dev
     link: https://github.com/prazdevs/praz-dev
     description: My personal dev blog, with JavaScript and stuff...
