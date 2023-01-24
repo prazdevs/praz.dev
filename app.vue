@@ -28,7 +28,7 @@ html.light {
   --shiki-color-background: #eeeeee;
   --shiki-token-constant: #4876d6;
   --shiki-token-string: #c96765;
-  --shiki-token-comment: #939dbb;
+  --shiki-token-comment: #767d94;
   --shiki-token-keyword: #994cc3;
   --shiki-token-parameter: #0c969b;
   --shiki-token-function: #4876d6;
@@ -42,7 +42,7 @@ html.dark {
   --shiki-color-background: #333333;
   --shiki-token-constant: #82AAFF;
   --shiki-token-string: #ecc48d;
-  --shiki-token-comment: #637777;
+  --shiki-token-comment: #8b9090;
   --shiki-token-keyword: #c792ea;
   --shiki-token-parameter: #7fdbca;
   --shiki-token-function: #82AAFF;
