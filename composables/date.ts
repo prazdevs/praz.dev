@@ -5,3 +5,7 @@ export function useDate(date: string) {
     year: 'numeric',
   })
 }
+
+export const prideMonth = computed(
+  () => useDateFormat(useNow({ interval: 1000 }), 'M').value === '6',
+)
