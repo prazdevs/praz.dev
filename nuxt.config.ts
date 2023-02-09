@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@nuxt/devtools',
     '@nuxt/image-edge',
     // '@nuxtjs/robots',
     '@nuxtjs/color-mode',
@@ -26,5 +27,8 @@ export default defineNuxtConfig({
   },
   image: {
     provider: 'ipx',
+  },
+  devtools: {
+    enabled: true,
   },
 })
