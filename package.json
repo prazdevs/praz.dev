@@ -9,10 +9,13 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "preview": "nuxi preview",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "test": "playwright test",
+    "test:debug": "playwright test --debug"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
+    "@axe-core/playwright": "^4.6.0",
     "@fontsource/indie-flower": "^4.5.10",
     "@fontsource/mononoki": "^4.5.3",
     "@fontsource/montserrat-alternates": "^4.5.11",
@@ -25,6 +28,7 @@
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/fontaine": "^0.2.4",
     "@nuxtjs/robots": "^3.0.0",
+    "@playwright/test": "^1.30.0",
     "@unocss/nuxt": "^0.49.4",
     "@vueuse/nuxt": "^9.12.0",
     "eslint": "^8.33.0",

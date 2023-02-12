@@ -2,7 +2,7 @@
 const color = useColorMode()
 
 function toggleDark() {
-  color.preference = color.preference === 'dark' ? 'light' : 'dark'
+  color.preference = color.value === 'dark' ? 'light' : 'dark'
 }
 </script>
 
@@ -52,7 +52,9 @@ function toggleDark() {
           </li>
           <li flex items-center>
             <button header-link @click="toggleDark">
-              <span sr-only>{{ 'toggle theme' }}</span>
+              <span sr-only>
+                {{ `switch to ${$colorMode.value === 'dark' ? 'light' : 'dark'} theme` }}
+              </span>
               <div i-iconoir-sun-light dark:i-iconoir-moon-sat />
             </button>
           </li>
@@ -80,7 +82,7 @@ function toggleDark() {
         </li>
         <li>
           <NuxtLink
-            to="https://www.linkedin.com/in/sachabouillez/"
+            to="https://www.linkedin.com/in/sachabouillez"
             target="_blank"
             header-link
           >

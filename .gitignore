@@ -6,3 +6,6 @@ dist
 .env
 .DS_Store
 .unlighthouse
+/test-results/
+/playwright-report/
+/playwright/.cache/
