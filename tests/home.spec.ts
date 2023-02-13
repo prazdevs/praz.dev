@@ -44,3 +44,27 @@ test.describe('social links', () => {
     await expect(githubPage).toHaveURL('https://github.com/prazdevs')
   })
 })
+
+test.describe('tech links', () => {
+  test('nuxt link works', async ({ page }) => {
+    await page.context().route('https://nuxt.com/**', route => route.fulfill({
+      body: '<html><body><h1>Nuxt</h1></body></html>',
+    }))
+    const [nuxtPage] = await Promise.all([
+      page.waitForEvent('popup'),
+      await page.getByRole('link', { name: 'Nuxt' }).click(),
+    ])
+    await expect(nuxtPage).toHaveURL('https://nuxt.com')
+  })
+
+  test('netlify link works', async ({ page }) => {
+    await page.context().route('https://nuxt.com/**', route => route.fulfill({
+      body: '<html><body><h1>Netlify</h1></body></html>',
+    }))
+    const [netlifyPage] = await Promise.all([
+      page.waitForEvent('popup'),
+      await page.getByRole('link', { name: 'Netlify' }).click(),
+    ])
+    await expect(netlifyPage).toHaveURL('https://www.netlify.com')
+  })
+})

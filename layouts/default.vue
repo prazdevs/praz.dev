@@ -106,11 +106,11 @@ function toggleDark() {
           <span>{{ 'Made with ' }}</span>
           <span text-primary>{{ '❤' }}</span>
           <span>{{ ' using ' }}</span>
-          <NuxtLink main-link target="_blank" to="https://v3.nuxtjs.org/">
+          <NuxtLink main-link target="_blank" to="https://nuxt.com">
             {{ 'Nuxt' }}
           </NuxtLink>
           <span>{{ ', hosted on ' }}</span>
-          <NuxtLink main-link target="_blank" to="https://www.netlify.com/">
+          <NuxtLink main-link target="_blank" to="https://www.netlify.com">
             {{ 'Netlify' }}
           </NuxtLink>
           <span>.</span>
