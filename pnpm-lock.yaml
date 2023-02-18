@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.35.2
   '@axe-core/playwright': ^4.6.0
+  '@fontsource/delius-unicase': ^4.5.10
   '@fontsource/indie-flower': ^4.5.10
   '@fontsource/mononoki': ^4.5.3
   '@fontsource/montserrat-alternates': ^4.5.11
@@ -25,6 +26,7 @@ specifiers:
 devDependencies:
   '@antfu/eslint-config': 0.35.2_4vsywjlpuriuw3tl5oq6zy5a64
   '@axe-core/playwright': 4.6.0
+  '@fontsource/delius-unicase': 4.5.10
   '@fontsource/indie-flower': 4.5.10
   '@fontsource/mononoki': 4.5.3
   '@fontsource/montserrat-alternates': 4.5.11
@@ -1121,6 +1123,10 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@fontsource/delius-unicase/4.5.10:
+    resolution: {integrity: sha512-ogvNlqHJ0DNJY4FZD+8Q5Kvf1K8GUoTU5V5ZcwKabNXdthABdmERXk3QKJbQMVGV6URiuirG+5qbjORLQRZm0w==}
     dev: true
 
   /@fontsource/indie-flower/4.5.10:

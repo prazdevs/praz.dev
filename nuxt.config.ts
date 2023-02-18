@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@fontsource/indie-flower',
     '@fontsource/mononoki',
     '@fontsource/montserrat-alternates',
+    '@fontsource/delius-unicase',
   ],
   unocss: {
     preflight: true,

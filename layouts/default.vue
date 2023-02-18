@@ -25,7 +25,7 @@ function toggleDark() {
             motion-safe:group-hover-animate-spin
             motion-safe:group-hover-animate-duration-2s
           />
-          <span sr-only sm:not-sr-only>
+          <span sr-only sm:not-sr-only font-unicase text-lg>
             {{ 'praz.dev' }}
           </span>
         </NuxtLink>

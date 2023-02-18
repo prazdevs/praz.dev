@@ -16,6 +16,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
     "@axe-core/playwright": "^4.6.0",
+    "@fontsource/delius-unicase": "^4.5.10",
     "@fontsource/indie-flower": "^4.5.10",
     "@fontsource/mononoki": "^4.5.3",
     "@fontsource/montserrat-alternates": "^4.5.11",

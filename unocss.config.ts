@@ -17,6 +17,7 @@ export default defineConfig({
     },
     fontFamily: {
       sans: 'Montserrat Alternates',
+      unicase: 'Delius Unicase',
       script: 'Indie Flower',
       mono: 'Mononoki',
     },
