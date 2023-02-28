@@ -93,8 +93,8 @@ const icon = computed(() => tags[props.tech]?.icon ?? '')
 
 <template>
   <span
-    :class="color"
-    border-1 border-opacity-50
+    :class="`${color} !border-opacity-30`"
+    border-1
     text-xs font-500
     inline-flex items-center
     gap-5px px-2 py-1 rounded-4px
