@@ -17,10 +17,15 @@ html {
   --at-apply: h-100vh m-0 p-0 antialiased;
 }
 body {
-  --at-apply: background-color;
+  --at-apply: bg-ctp-latte-base text-ctp-latte-text;
+  --at-apply: dark:(bg-ctp-mocha-base text-ctp-mocha-text);
+  --at-apply: motion-safe:(transition-background-color transition-text-color);
 }
 *, ::before, ::after {
   --at-apply: border-color-gray-200 dark:border-opacity-16;
+}
+* {
+  --at-apply: motion-reduce:(!transition-none);
 }
 
 html.light {

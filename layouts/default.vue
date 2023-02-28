@@ -11,7 +11,6 @@ function toggleDark() {
     <header
       w-full border-b
       text-xl
-      background-color
     >
       <nav
         h-3rem sm:h-4rem

@@ -6,6 +6,7 @@ import {
   presetUno,
   transformerDirectives,
 } from 'unocss'
+import presetCatppuccin from 'unocss-preset-catppuccin'
 
 export default defineConfig({
   theme: {
@@ -26,6 +27,7 @@ export default defineConfig({
     presetUno(),
     presetTypography(),
     presetAttributify({ prefix: 'u:' }),
+    presetCatppuccin(),
     presetIcons({
       scale: 1.2,
     }),
@@ -36,16 +38,21 @@ export default defineConfig({
     ['text-shadow-white', { 'text-shadow': '0 0 2px white' }],
   ],
   shortcuts: [
+    // ? containers
     ['main-container', 'max-w-992px'],
+
+    // ? colors
+    ['text-primary', 'text-ctp-latte-red dark:text-ctp-mocha-red'],
+    ['border-primary', 'border-ctp-latte-red dark:border-ctp-mocha-red'],
+    ['border-text', 'border-ctp-latte-text dark:border-ctp-mocha-text'],
+
     ['h1-primary', 'text-3xl sm:text-4xl border-b-2 border-primary font-700'],
     ['h2-primary', 'text-3xl font-600'],
-    ['background-color', 'bg-gray-100 dark:bg-#1a202c dark:(text-white text-opacity-90) motion-safe:transition-background-color'],
-    ['text-primary', 'text-red-600 dark:text-red-400'],
-    ['background-primary', 'bg-red-600 dark:bg-red-400'],
-    ['outline-primary', 'rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400'],
+
+    ['outline-primary', 'rounded outline-offset-3 outline-solid outline-2 outline-ctp-latte-red dark:outline-ctp-mocha-red'],
     ['outline-switch', 'outline-solid outline-2 outline-red-600 dark:outline-red-400'],
-    ['border-primary', 'border-red-600 dark:border-red-400'],
-    ['header-link', 'flex items-center hover-text-red-600 dark:hover-text-red-400 focus-visible:(rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400) motion-safe:transition-color'],
-    ['main-link', 'font-500 border-b-1 border-black !no-underline dark:border-white hover-border-red-600 dark:hover-border-red-400 hover-text-red-600 dark:hover-text-red-400 focus-visible:(rounded outline-offset-3 outline-solid outline-2 outline-red-600 dark:outline-red-400 !transition-none) motion-safe:(transition-all hover-p-b-1)'],
+
+    ['header-link', 'flex items-center hover:text-primary focus-visible:outline-primary motion-safe:transition-color'],
+    ['main-link', 'font-500 border-b-1 !no-underline border-text hover:(text-primary border-primary) focus-visible:(outline-primary) motion-safe:(transition-all hover-p-b-1)'],
   ],
 })
