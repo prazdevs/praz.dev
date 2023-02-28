@@ -100,6 +100,6 @@ const icon = computed(() => tags[props.tech]?.icon ?? '')
     gap-5px px-2 py-1 rounded-4px
   >
     <span inline-flex :class="icon" />
-    <span font-bold>{{ label }}</span>
+    <span>{{ label }}</span>
   </span>
 </template>
