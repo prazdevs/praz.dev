@@ -22,7 +22,7 @@
       </g>
 
     </g>
-    <g v-else clip-path="url(#maskclip)">
+    <g v-else mask="url(#maskclip)">
       <path fill="currentColor" d="M-112.43333207 1.7595374h901.13274v572.2192899h-901.13274z" />
     </g>
   </svg>
