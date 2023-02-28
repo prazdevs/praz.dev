@@ -5,10 +5,12 @@ defineProps<{ title?: string }>();
 <template>
   <div
     font-mono
-    u:bg="dark:#011627"
     p-6
     rounded-20px
     border-2
+    bg-ctp-latte-base-mantle
+    dark:bg-ctp-mocha-mantle
+    border-ctp-latte-crust
     dark:border-0
     leading-normal
   >
@@ -22,8 +24,8 @@ defineProps<{ title?: string }>();
       px-2
       rounded-b-5px
       mb-6
-      bg-gray-200
-      dark:bg-gray-700
+      bg-ctp-latte-crust
+      dark:bg-ctp-mocha-crust
     >
       {{ title }}
     </div>

@@ -1,7 +1,7 @@
 <template>
   <span
-    bg-gray-200
-    dark:bg-gray-700
+    bg-ctp-latte-mantle
+    dark:bg-ctp-mocha-mantle
     px-1
     rounded-sm
     font-mono
