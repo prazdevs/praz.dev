@@ -1,7 +1,11 @@
 {
   "name": "praz.dev",
   "private": true,
+  "packageManager": "pnpm@8.1.1",
   "description": "My personal dev blog built with Nuxt.",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
@@ -36,17 +40,5 @@
     "nuxt": "3.3.2",
     "typescript": "^5.0.2",
     "unocss-preset-catppuccin": "^0.1.0"
-  },
-  "volta": {
-    "node": "18.12.1"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "vite",
-        "webpack",
-        "vue"
-      ]
-    }
   }
 }
