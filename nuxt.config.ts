@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nuxt/devtools',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
