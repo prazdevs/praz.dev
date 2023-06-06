@@ -1,11 +1,17 @@
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://praz.dev'
+    }
+  },
   modules: [
     '@nuxt/content',
-    '@nuxt/image-edge',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    'nuxt-simple-robots',
+    'nuxt-simple-sitemap',
   ],
   css: [
     '@fontsource/indie-flower',
@@ -23,9 +29,6 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'css-variables',
     },
-  },
-  image: {
-    provider: 'ipx',
   },
   devtools: {
     enabled: true,

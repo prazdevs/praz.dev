@@ -53,6 +53,6 @@ export default defineConfig({
     ['outline-switch', 'outline-solid outline-2 outline-red-600 dark:outline-red-400'],
 
     ['header-link', 'flex items-center hover:text-primary focus-visible:outline-primary motion-safe:transition-color'],
-    ['main-link', 'font-500 border-b-1 !no-underline border-text hover:(text-primary border-primary) focus-visible:(outline-primary) motion-safe:(transition-all hover-p-b-1)'],
+    ['main-link', 'font-500 border-b-1 !no-underline border-text hover:(text-primary border-primary) focus-visible:outline-primary motion-safe:(transition-all hover-p-b-1)'],
   ],
 })
