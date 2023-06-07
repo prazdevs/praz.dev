@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      siteUrl: 'https://praz.dev'
-    }
+      siteUrl: 'https://praz.dev',
+    },
   },
   modules: [
     '@nuxt/content',
