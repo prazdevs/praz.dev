@@ -1,3 +1,4 @@
+---
 title: Projects
 
 description: You will find here the projects I work(ed) on and their GitHub repo.
@@ -41,3 +42,4 @@ projects:
     tags: 
       - nodejs
       - typescript
+---
