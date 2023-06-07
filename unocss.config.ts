@@ -10,12 +10,6 @@ import presetCatppuccin from 'unocss-preset-catppuccin'
 
 export default defineConfig({
   theme: {
-    colors: {
-      primary: {
-        dark: 'red-400',
-        light: 'red-600',
-      },
-    },
     fontFamily: {
       sans: 'Montserrat Alternates',
       unicase: 'Delius Unicase',
