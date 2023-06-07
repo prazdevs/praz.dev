@@ -1,3 +1,14 @@
+<script setup lang="ts">
+interface Post {
+  _path: string
+  title: string
+  description: string
+  date: string
+  ttr: number
+  tags: string[]
+}
+</script>
+
 <template>
   <div flex flex-col gap-7 mt-4 sm:mt-7>
     <div flex flex-col gap-4>
@@ -18,7 +29,7 @@
     <div flex flex-col>
       <ContentList v-slot="{ list: posts }" path="posts" :where="{ _empty: { $eq: false }, _id: { $regex: /\d+.*/i } }" :sort="{ _id: -1 }">
         <div
-          v-for="post in posts"
+          v-for="post in posts as Post[]"
           :key="post.title"
           flex flex-col gap-3
           not-last:border-b-1 not-last-pb-6 not-first-pt-6

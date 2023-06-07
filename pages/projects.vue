@@ -1,3 +1,12 @@
+<script setup lang="ts">
+interface Project {
+  title: string
+  link: string
+  description: string
+  tags: string[]
+}
+</script>
+
 <template>
   <div flex flex-col gap-7 mt-4 sm:mt-7>
     <ContentQuery v-slot="{ data }" path="projects" find="one">
@@ -10,7 +19,7 @@
       </div>
       <div flex flex-col>
         <div
-          v-for="project in data.projects"
+          v-for="project in data.projects as Project[]"
           :key="project.title"
           flex
           flex-col
