@@ -27,6 +27,8 @@ body {
   --at-apply: border-color-gray-200 dark:border-opacity-16;
 }
 * {
+  --at-apply: selection:(bg-ctp-latte-red text-ctp-latte-base);
+  --at-apply: dark:(selection:(bg-ctp-mocha-red text-ctp-mocha-base));
   --at-apply: motion-reduce:(!transition-none);
 }
 
