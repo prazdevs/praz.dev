@@ -5,14 +5,12 @@
         <Metadata />
         <NuxtPicture
           alt="Picture of me, Sacha, with red hair and glasses"
-          border-2
-          border-primary
-          rounded-full
-          h-7rem
-          w-7rem
           src="/imgs/sacha.jpg"
           height="300px"
           width="300px"
+          :img-attrs="{
+            class: 'border-2 border-primary h-7rem w-7rem rounded-full',
+          }"
         />
         <div flex flex-col items-center sm:items-start justify-center gap-2>
           <h1 h1-primary>
