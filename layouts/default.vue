@@ -66,7 +66,7 @@ function toggleDark() {
     <footer
       main-container w-full
       flex flex-col justify-center items-center gap-6
-      mx-auto mt-20 mb-2
+      mx-auto mt-20 pb-6
     >
       <ul flex text-3xl gap-7>
         <li>
