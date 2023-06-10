@@ -9,7 +9,7 @@ withDefaults(defineProps<{ src: string; alt?: string }>(), { alt: "" });
       :alt="alt"
       loading="lazy"
       decoding="async"
-      width="600px"
+      sizes="xs:320px sm:600px"
       :img-attrs="{
         class: 'w-full max-w-600px'
       }"
