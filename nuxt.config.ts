@@ -4,8 +4,12 @@ export default defineNuxtConfig({
       siteUrl: 'https://praz.dev',
     },
   },
+  devtools: {
+    enabled: true,
+  },
   modules: [
     '@nuxt/content',
+    '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
     '@unocss/nuxt',
@@ -19,9 +23,6 @@ export default defineNuxtConfig({
     '@fontsource/montserrat-alternates',
     '@fontsource/delius-unicase',
   ],
-  unocss: {
-    preflight: true,
-  },
   colorMode: {
     classSuffix: '',
   },
@@ -30,7 +31,7 @@ export default defineNuxtConfig({
       theme: 'css-variables',
     },
   },
-  devtools: {
-    enabled: true,
+  unocss: {
+    preflight: true,
   },
 })
