@@ -1,7 +1,7 @@
 <template>
   <div flex flex-col gap-7 mt-4 sm:mt-7>
-    <div flex flex-col sm:flex-row gap-4 justify-center items-center>
-      <ContentQuery v-slot="{ data }" path="home" find="one">
+    <ContentQuery v-slot="{ data }" path="home" find="one">
+      <div flex flex-col sm:flex-row gap-4 justify-center items-center>
         <Metadata />
         <NuxtPicture
           alt="Picture of me, Sacha, with red hair and glasses"
@@ -20,10 +20,10 @@
             {{ data.description }}
           </p>
         </div>
-      </ContentQuery>
-    </div>
-    <div text-xl mt-8 font-bold italic text-center>
-      {{ 'I am currently rebuilding my website in Nuxt. Posts and projects are still available!' }}
-    </div>
+      </div>
+      <div text-xl mt-8 font-bold italic text-center>
+        {{ data.wip }}
+      </div>
+    </ContentQuery>
   </div>
 </template>
