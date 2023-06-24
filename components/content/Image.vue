@@ -4,7 +4,7 @@ withDefaults(defineProps<{ src: string; alt?: string }>(), { alt: "" });
 
 <template>
   <figure flex flex-col items-center justify-center my-7>
-    <NuxtPicture
+    <img
       :src="`/content/${src}`"
       :alt="alt"
       loading="lazy"
@@ -12,6 +12,8 @@ withDefaults(defineProps<{ src: string; alt?: string }>(), { alt: "" });
       sizes="xs:320px sm:600px"
       height="300"
       width="600"
+      w-full
+      max-w-600px
       :img-attrs="{
         class: 'w-full max-w-600px'
       }"

@@ -3,11 +3,16 @@
     <ContentQuery v-slot="{ data }" path="home" find="one">
       <div flex flex-col sm:flex-row gap-4 justify-center items-center>
         <Metadata />
-        <NuxtPicture
+        <img
           alt="Picture of me, Sacha, with red hair and glasses"
           src="/imgs/sacha.jpg"
           height="300px"
           width="300px"
+          border-2
+          border-primary
+          h-7rem
+          w-7rem
+          rounded-full
           :img-attrs="{
             class: 'border-2 border-primary h-7rem w-7rem rounded-full',
           }"
