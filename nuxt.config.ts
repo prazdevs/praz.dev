@@ -2,6 +2,9 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  experimental: {
+    payloadExtraction: false,
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/image',
