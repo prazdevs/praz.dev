@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxt/image',
+    // '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
     '@unocss/nuxt',
@@ -26,12 +26,6 @@ export default defineNuxtConfig({
       theme: 'css-variables',
     },
   },
-  // image: {
-  //   provider: 'netlify',
-  //   netlify: {
-  //     baseURL: process.env.IMAGES_URL,
-  //   },
-  // },
   unocss: {
     preflight: true,
   },
