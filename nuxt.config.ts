@@ -26,12 +26,12 @@ export default defineNuxtConfig({
       theme: 'css-variables',
     },
   },
-  image: {
-    provider: 'netlify',
-    netlify: {
-      baseURL: process.env.IMAGES_URL,
-    },
-  },
+  // image: {
+  //   provider: 'netlify',
+  //   netlify: {
+  //     baseURL: process.env.IMAGES_URL,
+  //   },
+  // },
   unocss: {
     preflight: true,
   },
