@@ -18,7 +18,7 @@ function toggleDark() {
         flex justify-between items-center
         px-3 mx-auto
       >
-        <NuxtLink class="group" gap-3 sm:gap-4 header-link to="/">
+        <NuxtLink class="group" gap-3 sm:gap-4 header-interactible to="/">
           <MaskIcon
             h-2rem text-2xl text-primary
             motion-safe:group-hover-animate-spin
@@ -33,7 +33,7 @@ function toggleDark() {
             <NuxtLink
               header-link
               to="/posts"
-              active-class="text-primary"
+              active-class="border-text"
             >
               <span sr-only sm:not-sr-only>{{ 'posts' }}</span>
               <div display-block sm:display-none i-iconoir-page-flip />
@@ -43,14 +43,14 @@ function toggleDark() {
             <NuxtLink
               header-link
               to="/projects"
-              active-class="text-primary"
+              active-class="border-text"
             >
               <span sr-only sm:not-sr-only>{{ 'projects' }}</span>
               <div display-block sm:display-none i-iconoir-light-bulb />
             </NuxtLink>
           </li>
           <li flex items-center>
-            <button header-link @click="toggleDark">
+            <button header-interactible @click="toggleDark">
               <span sr-only>
                 {{ `switch to ${$colorMode.value === 'dark' ? 'light' : 'dark'} theme` }}
               </span>

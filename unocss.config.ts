@@ -46,7 +46,8 @@ export default defineConfig({
     ['outline-primary', 'rounded outline-offset-3 outline-solid outline-2 outline-ctp-latte-red dark:outline-ctp-mocha-red'],
     ['outline-switch', 'outline-solid outline-2 outline-red-600 dark:outline-red-400'],
 
-    ['header-link', 'flex items-center hover:text-primary focus-visible:outline-primary motion-safe:transition-color'],
-    ['main-link', 'font-500 border-b-1 !no-underline border-text hover:(text-primary border-primary) focus-visible:outline-primary motion-safe:(transition-all hover-p-b-1)'],
+    ['header-interactible', 'flex items-center border-b-2 border-transparent hover:(text-primary) focus-visible:outline-primary transition-all'],
+    ['header-link', 'header-interactible hover:(border-primary)'],
+    ['main-link', 'font-500 border-b-1 !no-underline border-text hover:(text-primary border-primary) focus-visible:outline-primary transition-all hover-p-b-1'],
   ],
 })
