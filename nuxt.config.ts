@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   },
   experimental: {
     payloadExtraction: false,
+    renderJsonPayloads: false,
   },
   modules: [
     '@nuxt/content',
