@@ -51,8 +51,8 @@ interface Post {
             </div>
             <div flex items-center gap-1>
               <div i-iconoir-wristwatch inline-flex />
-              <span inline sm:hidden>{{ `${post.ttr}'` }}</span>
-              <span sm:inline hidden>{{ `${post.ttr} min read` }}</span>
+              <span lt-sm:inline sm:hidden>{{ `${post.ttr}'` }}</span>
+              <span lt-sm:hidden sm:inline>{{ `${post.ttr} min read` }}</span>
             </div>
           </div>
           <div inline-flex gap-2 flex-wrap>

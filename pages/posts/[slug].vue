@@ -23,8 +23,8 @@
         </div>
         <div flex items-center gap-2>
           <div i-iconoir-wristwatch inline-flex />
-          <span inline sm:hidden>{{ `${data.ttr}'` }}</span>
-          <span hidden sm:inline>{{ `${data.ttr} min read` }}</span>
+          <span lt-sm:inline sm:hidden>{{ `${data.ttr}'` }}</span>
+          <span lt-sm:hidden sm:inline>{{ `${data.ttr} min read` }}</span>
         </div>
       </div>
       <ContentRenderer :value="data" />
