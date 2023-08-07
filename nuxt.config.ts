@@ -1,15 +1,10 @@
 export default defineNuxtConfig({
-  runtimeConfig: {
-    public: {
-      siteUrl: 'https://praz.dev',
-    },
-  },
   devtools: {
     enabled: true,
   },
   modules: [
     '@nuxt/content',
-    // '@nuxt/image',
+    '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
     '@unocss/nuxt',

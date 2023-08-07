@@ -21,7 +21,6 @@ html {
 body {
   --at-apply: bg-ctp-latte-base text-ctp-latte-text;
   --at-apply: dark:(bg-ctp-mocha-base text-ctp-mocha-text);
-  /* --at-apply: motion-safe:(transition-background-color transition-text-color); */
 }
 *, ::before, ::after {
   --at-apply: border-color-gray-200 dark:border-opacity-16;
