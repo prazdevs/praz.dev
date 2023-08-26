@@ -2,6 +2,9 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  experimental: {
+    headNext: true,
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/image',
