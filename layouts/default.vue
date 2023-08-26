@@ -47,9 +47,11 @@ const { toggleDark } = useDarkMode()
           </li>
           <li flex items-center>
             <button header-interactible @click="toggleDark">
-              <span sr-only>
-                {{ `switch to ${$colorMode.value === 'dark' ? 'light' : 'dark'} theme` }}
-              </span>
+              <ClientOnly>
+                <span sr-only>
+                  {{ `switch to ${$colorMode.value === 'dark' ? 'light' : 'dark'} theme` }}
+                </span>
+              </ClientOnly>
               <div i-iconoir-sun-light dark:i-iconoir-moon-sat />
             </button>
           </li>
