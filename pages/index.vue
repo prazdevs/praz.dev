@@ -1,9 +1,11 @@
+
+
 <template>
   <div flex flex-col gap-7 mt-4 sm:mt-7>
     <ContentQuery v-slot="{ data }" path="home" find="one">
       <div flex flex-col sm:flex-row gap-4 justify-center items-center>
         <Metadata />
-        <NuxtImg
+        <img
           alt="Picture of me, Sacha, with red hair and glasses"
           src="/imgs/sacha.jpg"
           height="300px"
