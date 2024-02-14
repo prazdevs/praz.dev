@@ -77,7 +77,6 @@ export default defineNuxtConfig({
     name: site.name,
     description: site.description,
     defaultLocale: 'en',
-    indexable: false,
   },
   sitemap: {
     strictNuxtContentPaths: true,
