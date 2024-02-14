@@ -3,5 +3,5 @@ defineOgImageComponent('default')
 </script>
 
 <template>
-  The index page
+  <ContentDoc />
 </template>
