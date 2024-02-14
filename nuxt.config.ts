@@ -23,6 +23,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       templateParams: {
+        description: site.description,
         separator: '–',
       },
     },
