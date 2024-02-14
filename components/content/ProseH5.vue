@@ -3,15 +3,15 @@ defineProps<{ id?: string }>()
 </script>
 
 <template>
-  <h3 :id="id">
+  <h5 :id="id">
     <slot />
-  </h3>
+  </h5>
 </template>
 
 <style scoped>
-h3 {
+h5 {
   color: var(--color-accent);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-lg);
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
   line-height: 1.15;

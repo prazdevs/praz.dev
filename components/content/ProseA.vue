@@ -1,9 +1,16 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ href: string }>(), { href: '' })
+import { hasProtocol } from 'ufo'
+
+defineProps<{
+  href?: string
+}>()
 </script>
 
 <template>
-  <NuxtLink main-link :href="href">
+  <ContentLink
+    :href="href"
+    :target="href && hasProtocol(href) ? '_blank' : '_self'"
+  >
     <slot />
-  </NuxtLink>
+  </ContentLink>
 </template>

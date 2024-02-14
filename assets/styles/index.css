@@ -1,0 +1,36 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./tokens.css');
+
+html,
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+}
+
+body {
+  max-width: var(--width-site);
+  margin: 0 auto;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+
+  & ::selection {
+    color: var(--color-background);
+    background-color: var(--color-text);
+  }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

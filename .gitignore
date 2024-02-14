@@ -1,11 +1,24 @@
-node_modules
-*.log
-dist
+# Nuxt dev/build outputs
 .output
+.data
 .nuxt
-.env
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
 .DS_Store
-.unlighthouse
-/test-results/
-/playwright-report/
-/playwright/.cache/
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example

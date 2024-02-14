@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Lexend';
+  src:
+    url(~/assets/fonts/lexend.woff2) format('woff2'),
+    url(~/assets/fonts/lexend.woff) format('woff');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src:
+    url(~/assets/fonts/quicksand.woff2) format('woff2'),
+    url(~/assets/fonts/quicksand.woff) format('woff');
+  font-display: block;
+}

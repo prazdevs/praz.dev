@@ -1,70 +1,120 @@
 <script setup lang="ts">
-import '@catppuccin/palette/style'
+import { site } from '~/config'
 
-useHead({
-  htmlAttrs: {
-    lang: 'en',
-  },
-})
+const route = useRoute()
 </script>
 
 <template>
-  <NuxtLayout>
+  <header class="header">
+    <NuxtLink
+      to="/"
+      class="header-logo"
+      :aria-label="site.name"
+    >
+      <Logo />
+    </NuxtLink>
+    <nav class="header-nav">
+      <NuxtLink
+        v-for="to in ['/work', '/blog']"
+        :key="to"
+        :to="to"
+        class="header-link"
+        :class="{ active: route.path.startsWith(to) }"
+      >
+        {{ to.slice(1) }}
+      </NuxtLink>
+      <ThemeToggle />
+    </nav>
+  </header>
+  <main class="content">
     <NuxtPage />
-  </NuxtLayout>
+  </main>
+  <footer class="footer">
+    <Socials />
+    {{ `© Sacha Bouillez ${new Date().getFullYear()} — All rights reserved` }}
+  </footer>
 </template>
 
-<style>
-html {
-  --at-apply: h-100vh m-0 p-0 antialiased;
-}
-body {
-  --at-apply: bg-ctp-latte-base text-ctp-latte-text;
-  --at-apply: dark:(bg-ctp-mocha-base text-ctp-mocha-text);
-}
-*, ::before, ::after {
-  --at-apply: border-color-gray-200 dark:border-opacity-16;
-}
-* {
-  --at-apply: selection:(bg-ctp-latte-red text-ctp-latte-base);
-  --at-apply: dark:(selection:(bg-ctp-mocha-red text-ctp-mocha-base));
-  /* --at-apply: motion-reduce:(!transition-none); */
+<style scoped>
+.header {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-3) var(--spacing-4);
 }
 
-html.light {
-  --shiki-color-text: var(--ctp-latte-text);
-  --shiki-color-background: var(--ctp-latte-mantle);
-  --shiki-token-constant: var(--ctp-latte-blue);
-  --shiki-token-string: var(--ctp-latte-peach);
-  --shiki-token-comment: var(--ctp-latte-subtext0);
-  --shiki-token-keyword: var(--ctp-latte-mauve);
-  --shiki-token-parameter: var(--ctp-latte-teal);
-  --shiki-token-function: var(--ctp-latte-blue);
-  --shiki-token-string-expression: var(--ctp-latte-peach);
-  --shiki-token-punctuation: var(--ctp-latte-text);
-  --shiki-token-link: var(--ctp-latte-peach);
+.header-logo {
+  height: 100%;
+  background: none;
+  transition: color var(--transition);
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &:focus-visible {
+    outline: solid var(--color-text) 3px;
+    outline-offset: var(--spacing-2);
+    border-radius: var(--spacing-2);
+  }
 }
 
-html.dark {
-  --shiki-color-text: var(--ctp-mocha-text);
-  --shiki-color-background: var(--ctp-mocha-mantle)
-  --shiki-token-constant: var(--ctp-mocha-blue);
-  --shiki-token-string: var(--ctp-mocha-yellow);
-  --shiki-token-comment: var(--ctp-mocha-subtext0);
-  --shiki-token-keyword: var(--ctp-mocha-mauve);
-  --shiki-token-parameter: var(--ctp-mocha-teal);
-  --shiki-token-function: var(--ctp-mocha-blue);
-  --shiki-token-string-expression: var(--ctp-mocha-yellow);
-  --shiki-token-punctuation: var(--ctp-mocha-text);
-  --shiki-token-link: var(--ctp-mocha-yellow);
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-6);
 }
 
-code {
-  font-family: inherit;
+.header-link {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.25rem;
+  position: relative;
+  transition: color var(--transition);
+  background: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    left: 10%;
+    right: 90%;
+    bottom: -0.25rem;
+    height: 0.25rem;
+    transition: all var(--transition);
+    border-radius: 1em;
+  }
+
+  &.active::before {
+    background-color: var(--color-text);
+    right: 10%;
+  }
+
+  &:hover {
+    color: var(--color-accent);
+
+    &::before {
+      background-color: var(--color-accent);
+      right: 10%;
+    }
+  }
+
+  &:focus-visible {
+    outline: solid var(--color-text) 3px;
+    outline-offset: var(--spacing-2);
+    border-radius: var(--spacing-2);
+  }
 }
 
-pre {
-  white-space: pre-wrap;
-  font-family: inherit;
+.content {
+  padding: 0 var(--spacing-4);
+}
+
+.footer {
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: var(--font-size-sm);
+  text-align: center;
 }
 </style>
