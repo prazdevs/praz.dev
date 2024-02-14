@@ -4,7 +4,7 @@ navigation: false
 
 # Work
 
-Here lies my developer curriculum. You will find (open source) projects I created and am proud of, but also a timeline of my professional experience.
+The (open source) projects I created and am proud of, but also a timeline of my professional experience.
 
 ## Projects
 
