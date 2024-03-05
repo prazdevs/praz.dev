@@ -69,7 +69,7 @@ The (open source) projects I created and am proud of, but also a timeline of my 
   #title
   JS & Vue instructor @ [ForEach Academy](https://www.foreach-academy.fr)
   #content
-  Teaching JavaScrip/TypeScript, Vue.js, Nuxt & related tooling. Raising awareness on accessiblity.
+  Teaching JavaScript/TypeScript, Vue.js, Nuxt & related tooling. Raising awareness on accessiblity.
   :::
 
   :::timeline-item
