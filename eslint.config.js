@@ -5,6 +5,6 @@ export default config({
     css: true,
   },
   typescript: {
-    tsconfigPath: 'tsconfig.json',
+    tsconfigPath: ['tsconfig.json', 'server/tsconfig.json'],
   },
 })
