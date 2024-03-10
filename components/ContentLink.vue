@@ -21,14 +21,14 @@ defineProps<{
   line-height: normal;
   text-decoration: none;
   font-weight: var(--font-weight-medium);
-  padding-bottom: 0.125rem;
   transition: all var(--transition);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position-x: right;
   background-image: linear-gradient(
-    transparent 1.25em,
-    var(--color-accent) 1.25em
+    to top,
+    var(--color-accent) 0.125em,
+    transparent 0.125em
   );
 
   &:hover {

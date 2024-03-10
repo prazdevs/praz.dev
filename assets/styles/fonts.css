@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Lexend';
+  font-family: 'Excon';
   src:
-    url(~/assets/fonts/lexend.woff2) format('woff2'),
-    url(~/assets/fonts/lexend.woff) format('woff');
+    url(~/assets/fonts/excon.woff2) format('woff2'),
+    url(~/assets/fonts/excon.woff) format('woff');
   font-display: block;
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Pally';
   src:
-    url(~/assets/fonts/quicksand.woff2) format('woff2'),
-    url(~/assets/fonts/quicksand.woff) format('woff');
+    url(~/assets/fonts/pally.woff2) format('woff2'),
+    url(~/assets/fonts/pally.woff) format('woff');
   font-display: block;
 }
