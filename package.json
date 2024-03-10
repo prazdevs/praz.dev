@@ -21,7 +21,7 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/critters": "^0.6.0",
     "@nuxtjs/fontaine": "^0.4.1",
-    "@nuxtjs/seo": "2.0.0-rc.7",
+    "@nuxtjs/seo": "2.0.0-rc.8",
     "@types/rss": "^0.0.32",
     "@vueuse/core": "^10.9.0",
     "eslint": "^8.57.0",
