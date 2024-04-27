@@ -4,7 +4,10 @@ export default config({
   formatters: {
     css: true,
   },
-  // typescript: {
-  //   tsconfigPath: ['tsconfig.json', 'server/tsconfig.json'],
-  // },
+  typescript: {
+    tsconfigPath: [
+      'tsconfig.json',
+      'server/tsconfig.json',
+    ],
+  },
 })
