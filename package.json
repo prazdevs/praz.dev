@@ -22,16 +22,15 @@
     "@nuxtjs/critters": "^0.7.1",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/seo": "2.0.0-rc.10",
-    "@types/rss": "^0.0.32",
     "@vueuse/core": "^10.9.0",
     "eslint": "npm:eslint-ts-patch@8.57.0-0",
     "eslint-plugin-format": "^0.1.1",
     "eslint-ts-patch": "8.57.0-0",
+    "feed": "^4.2.2",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
     "postcss-custom-media": "^10.0.4",
     "postcss-nesting": "^12.1.2",
-    "rss": "^1.2.2",
     "vue": "^3.4.25",
     "vue-router": "^4.3.2"
   }

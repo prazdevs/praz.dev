@@ -102,7 +102,7 @@ export default defineNuxtConfig({
     url: site.url,
     name: site.name,
     description: site.description,
-    defaultLocale: 'en',
+    defaultLocale: site.locale,
   },
   sitemap: {
     strictNuxtContentPaths: true,

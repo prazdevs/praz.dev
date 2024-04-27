@@ -29,7 +29,7 @@ import { site } from '~/config'
   </main>
   <footer class="footer">
     <Socials />
-    {{ `© Sacha Bouillez ${new Date().getFullYear()} — All rights reserved` }}
+    {{ site.copyright }}
   </footer>
 </template>
 

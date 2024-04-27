@@ -1,7 +1,7 @@
-import RSS from 'rss'
-import { joinURL, normalizeURL } from 'ufo'
+import { Feed } from 'feed'
+import { joinURL } from 'ufo'
 import type { ParsedContent } from '@nuxt/content/types'
-import { site } from '~/config'
+import { identity, site } from '~/config'
 import { serverQueryContent } from '#content/server'
 
 interface ParsedPost extends ParsedContent {
@@ -15,22 +15,29 @@ export default defineEventHandler(async (event) => {
     .sort({ date: -1 })
     .find()
 
-  const feed = new RSS({
+  const feed = new Feed({
     title: site.name,
-    site_url: normalizeURL(site.url),
-    feed_url: joinURL(site.url, 'rss.xml'),
+    id: site.url,
+    link: site.url,
+    language: site.locale,
+    copyright: site.copyright,
+    favicon: joinURL(site.url, 'favicon.ico'),
+    author: {
+      name: identity.name,
+      link: site.url,
+    },
   })
 
   for (const post of posts) {
-    feed.item({
+    feed.addItem({
       title: post.title ?? '',
-      url: joinURL(site.url, post._path ?? ''),
-      date: post.date,
-      description: post.description ?? '',
+      date: new Date(post.date),
+      link: joinURL(site.url, post._path ?? ''),
+      description: post.description,
     })
   }
 
   setResponseHeader(event, 'content-type', 'text/xml')
 
-  return feed.xml({ indent: true })
+  return feed.rss2()
 })
