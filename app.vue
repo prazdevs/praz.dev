@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { site } from '~/config'
-
-const route = useRoute()
 </script>
 
 <template>
@@ -19,7 +17,7 @@ const route = useRoute()
         :key="to"
         :to="to"
         class="header-link"
-        :class="{ active: route.path.startsWith(to) }"
+        :class="{ active: $route.path.startsWith(to) }"
       >
         {{ to.slice(1) }}
       </NuxtLink>

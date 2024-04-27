@@ -58,9 +58,6 @@ export default defineNuxtConfig({
       reduceInlineStyles: false,
     },
   },
-  ogImage: {
-    fonts: ['Quicksand:700', 'Lexend:400'],
-  },
   robots: {
     blockNonSeoBots: true,
     groups: [{
@@ -98,12 +95,7 @@ export default defineNuxtConfig({
     identity: {
       type: identity.type,
       name: identity.name,
-      sameAs: [
-        socials.github,
-        socials.twitter,
-        socials.mastodon,
-        socials.linkedin,
-      ],
+      sameAs: Object.values(socials),
     },
   },
   site: {
