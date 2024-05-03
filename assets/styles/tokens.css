@@ -43,3 +43,9 @@
     --color-accent: #f078ae;
   }
 }
+
+/* breakpoints */
+@custom-media --screen-sm screen and (min-width: 640px);
+@custom-media --screen-md screen and (min-width: 768px);
+@custom-media --screen-lg screen and (min-width: 1024px);
+@custom-media --screen-xl screen and (min-width: 1280px);
