@@ -2,12 +2,13 @@
   "name": "praz.dev",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.1",
   "description": "My personal dev blog and digital garden.",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "lint": "eslint .",
@@ -16,22 +17,20 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.16.1",
+    "@antfu/eslint-config": "^2.18.1",
     "@nuxt/content": "^2.12.1",
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/critters": "^0.7.1",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/seo": "2.0.0-rc.10",
     "@vueuse/core": "^10.9.0",
-    "eslint-plugin-format": "^0.1.1",
-    "eslint": "npm:eslint-ts-patch@8.57.0-0",
-    "eslint-ts-patch": "8.57.0-0",
+    "eslint": "9.3.0",
     "feed": "^4.2.2",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
-    "postcss-custom-media": "^10.0.4",
-    "postcss-nesting": "^12.1.2",
-    "vue": "^3.4.26",
+    "postcss-custom-media": "^10.0.6",
+    "postcss-nesting": "^12.1.4",
+    "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   }
 }
