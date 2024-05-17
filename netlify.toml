@@ -4,23 +4,3 @@ publish = "dist"
 
 [build.environment]
 NODE_VERSION = "20"
-
-[[redirects]]
-from = "/twitter"
-to = "https://twitter.com/prazdevs"
-status = 301
-
-[[redirects]]
-from = "/github"
-to = "https://github.com/prazdevs"
-status = 301
-
-[[redirects]]
-from = "/mastodon"
-to = "https://hachyderm.io/@praz"
-status = 301
-
-[[redirects]]
-from = "/linkedin"
-to = "https://www.linkedin.com/in/sachabouillez"
-status = 301
