@@ -21,7 +21,6 @@ import { site } from '~/config'
       >
         {{ to.slice(1) }}
       </NuxtLink>
-      <ThemeToggle />
     </nav>
   </header>
   <main class="content">
