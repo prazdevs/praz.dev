@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
+    '@nuxt/fonts',
     '@nuxtjs/seo',
     'nuxt-icon',
   ],
@@ -23,6 +24,14 @@ export default defineNuxtConfig({
         description: site.description,
         separator: '–',
       },
+    },
+  },
+  fonts: {
+    providers: {
+      google: false,
+    },
+    experimental: {
+      processCSSVariables: true,
     },
   },
   postcss: {
