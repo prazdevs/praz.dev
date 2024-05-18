@@ -11,7 +11,7 @@ import { socials } from '~/config'
         aria-label="GitHub profile (opens in new tab)"
         :to="socials.github"
       >
-        <Icon class="icon" name="ri:github-line" />
+        <Icon class="icon" name="ph:github-logo" />
       </NuxtLink>
     </li>
 
@@ -22,7 +22,7 @@ import { socials } from '~/config'
         aria-label="Twitter profile (opens in new tab)"
         :to="socials.twitter"
       >
-        <Icon class="icon" name="ri:twitter-line" />
+        <Icon class="icon" name="ph:twitter-logo" />
       </NuxtLink>
     </li>
     <li>
@@ -32,7 +32,7 @@ import { socials } from '~/config'
         aria-label="Mastodon profile (opens in new tab)"
         :to="socials.mastodon"
       >
-        <Icon class="icon" name="ri:mastodon-line" />
+        <Icon class="icon" name="ph:mastodon-logo" />
       </NuxtLink>
     </li>
     <li>
@@ -42,7 +42,7 @@ import { socials } from '~/config'
         aria-label="LinkedIn profile (opens in new tab)"
         :to="socials.linkedin"
       >
-        <Icon class="icon" name="ri:linkedin-box-line" />
+        <Icon class="icon" name="ph:linkedin-logo" />
       </NuxtLink>
     </li>
   </ul>
