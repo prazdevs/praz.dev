@@ -11,9 +11,6 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/critters',
-    '@nuxtjs/fontaine',
     '@nuxtjs/seo',
     'nuxt-icon',
   ],
@@ -26,11 +23,6 @@ export default defineNuxtConfig({
         description: site.description,
         separator: '–',
       },
-    },
-  },
-  nitro: {
-    prerender: {
-      routes: ['/rss.xml'],
     },
   },
   postcss: {
@@ -51,11 +43,6 @@ export default defineNuxtConfig({
         default: 'catppuccin-latte',
         dark: 'catppuccin-mocha',
       },
-    },
-  },
-  critters: {
-    config: {
-      reduceInlineStyles: false,
     },
   },
   robots: {
