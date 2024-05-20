@@ -4,10 +4,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  experimental: {
-    headNext: true,
-    viewTransition: true,
-  },
   features: {
     noScripts: true,
   },
@@ -21,12 +17,15 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      titleTemplate: `%s %separator %name`,
+      htmlAttrs: {
+        lang: 'en',
+      },
       templateParams: {
         name: site.name,
         description: site.description,
         separator: '—',
       },
+      titleTemplate: `%s %separator %name`,
     },
   },
   content: {
