@@ -1,3 +1,5 @@
+import { site } from './config'
+
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
@@ -17,6 +19,16 @@ export default defineNuxtConfig({
   css: [
     '~/assets/styles/index.css',
   ],
+  app: {
+    head: {
+      titleTemplate: `%s %separator %name`,
+      templateParams: {
+        name: site.name,
+        description: site.description,
+        separator: '—',
+      },
+    },
+  },
   content: {
     documentDriven: true,
     markdown: {

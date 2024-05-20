@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import { site } from '~/config'
-
-useHeadSafe({
-  title: `${site.name} — ${site.description}`,
-})
+useHeadSafe({ titleTemplate: '%name %separator %description' })
 </script>
 
 <template>
