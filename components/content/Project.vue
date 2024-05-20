@@ -7,7 +7,7 @@ const props = defineProps<{
   description: string
 }>()
 
-const { data } = useFetch(joinURL('https://ungh.cc/repos', props.repo), {
+const { data } = useLazyFetch(joinURL('https://ungh.cc/repos', props.repo), {
   transform: (d: { repo: { stars: number, forks: number } }) => d.repo,
   default: () => ({ stars: '-', forks: '-' }),
 })
