@@ -1,11 +1,10 @@
-import { site } from './config'
-
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  features: {
-    noScripts: true,
+  experimental: {
+    typedPages: true,
+    viewTransition: true,
   },
   modules: [
     '@nuxt/content',
@@ -15,19 +14,6 @@ export default defineNuxtConfig({
   css: [
     '~/assets/styles/index.css',
   ],
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en',
-      },
-      templateParams: {
-        name: site.name,
-        description: site.description,
-        separator: '—',
-      },
-      titleTemplate: `%s %separator %name`,
-    },
-  },
   content: {
     documentDriven: true,
     markdown: {

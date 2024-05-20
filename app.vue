@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import { site } from '~/config'
+
+const route = useRoute()
+
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  },
+  titleTemplate: title => route.path === '/'
+    ? `${site.name} — ${site.description}`
+    : `${title} — ${site.name}`,
+})
 </script>
 
 <template>
@@ -17,7 +28,7 @@ import { site } from '~/config'
         :key="to"
         :to="to"
         class="header-link"
-        :class="{ active: $route.path.startsWith(to) }"
+        :class="{ active: route.path.startsWith(to) }"
       >
         {{ to.slice(1) }}
       </NuxtLink>
