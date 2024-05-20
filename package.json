@@ -19,6 +19,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.18.1",
     "@nuxt/content": "^2.12.1",
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/fontaine": "^0.4.2",
     "@vueuse/core": "^10.9.0",
     "eslint": "9.3.0",
