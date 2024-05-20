@@ -19,14 +19,11 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.18.1",
     "@nuxt/content": "^2.12.1",
-    "@nuxt/fonts": "^0.7.0",
-    "@nuxtjs/seo": "2.0.0-rc.10",
+    "@nuxtjs/fontaine": "^0.4.2",
     "@vueuse/core": "^10.9.0",
     "eslint": "9.3.0",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
-    "postcss-custom-media": "^10.0.6",
-    "postcss-nesting": "^12.1.4",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   }

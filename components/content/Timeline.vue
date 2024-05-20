@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-@media (--screen-md) {
+@media screen and (min-width: 768px) {
   .timeline {
     display: table;
     margin-top: 2.25rem;

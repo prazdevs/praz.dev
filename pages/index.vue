@@ -1,8 +1,8 @@
 <script setup lang="ts">
-defineOgImageComponent('default')
+import { site } from '~/config'
 
 useHeadSafe({
-  titleTemplate: '%siteName %separator %description',
+  title: `${site.name} — ${site.description}`,
 })
 </script>
 

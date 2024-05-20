@@ -105,7 +105,7 @@ function formatDate(date: string) {
   font-size: var(--font-size-lg);
 }
 
-@media (--screen-md) {
+@media screen and (min-width: 768px) {
   .timeline-item {
     display: table-row;
     padding: 0;
