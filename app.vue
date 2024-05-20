@@ -121,8 +121,9 @@ useHead({
 }
 
 .footer {
+  text-align: center;
+  margin-top: var(--spacing-9);
   padding: var(--spacing-2) var(--spacing-4);
   font-size: var(--font-size-sm);
-  text-align: center;
 }
 </style>

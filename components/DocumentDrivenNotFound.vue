@@ -24,9 +24,9 @@ useHeadSafe({ title: '404' })
   font-family: var(--font-family-heading);
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
+  margin-top: var(--spacing-9);
+  margin-bottom: var(--spacing-4);
   line-height: 1.15;
-  margin-top: 2.25rem;
-  margin-bottom: 1rem;
 }
 
 .image {
