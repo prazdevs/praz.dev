@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/image',
+    '@nuxthub/core',
     '@nuxtjs/fontaine',
     'nuxt-icon',
   ],
