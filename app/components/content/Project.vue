@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { joinURL } from 'ufo'
-
 const props = defineProps<{
   name: string
   repo: string
   description: string
 }>()
 
-const { data } = useLazyFetch(joinURL('https://ungh.cc/repos', props.repo), {
+const { data } = useFetch(`https://ungh.cc/repos/${props.repo}`, {
   transform: (d: { repo: { stars: number, forks: number } }) => d.repo,
   default: () => ({ stars: '-', forks: '-' }),
 })
@@ -18,7 +16,7 @@ const { data } = useLazyFetch(joinURL('https://ungh.cc/repos', props.repo), {
     <ContentLink
       class="name"
       target="_blank"
-      :to="joinURL('https://github.com', repo)"
+      :to="`https://github.com/${repo}`"
     >
       {{ name }}
       <Icon name="ph:arrow-square-out-bold" />

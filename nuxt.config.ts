@@ -6,12 +6,14 @@ export default defineNuxtConfig({
     typedPages: true,
     viewTransition: true,
   },
+  future: {
+    compatibilityVersion: 4,
+  },
   modules: [
     '@nuxt/content',
+    '@nuxt/icon',
     '@nuxt/image',
-    '@nuxthub/core',
     '@nuxtjs/fontaine',
-    'nuxt-icon',
   ],
   css: [
     '~/assets/styles/index.css',

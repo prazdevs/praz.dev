@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { site } from '~/config'
+import { site } from '~~/config'
 
 const route = useRoute()
 
