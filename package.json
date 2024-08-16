@@ -2,7 +2,7 @@
   "name": "praz.dev",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.7.1",
   "description": "My personal dev blog and digital garden.",
   "engines": {
     "node": ">=20"
@@ -11,20 +11,22 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . --flag unstable_ts_config",
+    "lint:fix": "eslint . --fix --flag unstable_ts_config",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.25.1",
+    "@antfu/eslint-config": "^2.25.2",
     "@iconify-json/ph": "^1.1.14",
     "@nuxt/content": "^2.13.2",
     "@nuxt/icon": "^1.4.5",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/fontaine": "^0.4.3",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.0",
     "eslint": "^9.9.0",
-    "nuxt": "^3.12.4"
+    "jiti": "^1.21.6",
+    "nuxt": "^3.12.4",
+    "ufo": "^1.5.4"
   }
 }
