@@ -1,5 +1,5 @@
 <script setup>
-useHeadSafe({ title: '404' })
+useSeoMeta({ title: '404' })
 </script>
 
 <template>
