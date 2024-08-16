@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  compatibilityDate: '2024-07-06',
+  compatibilityDate: '2024-08-16',
   modules: [
     '@nuxt/content',
     '@nuxt/icon',
