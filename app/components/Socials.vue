@@ -48,7 +48,7 @@ import { socials } from '~~/config'
   </ul>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .socials {
   display: flex;
   justify-content: center;

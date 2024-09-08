@@ -43,7 +43,7 @@ useHead({
   </footer>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .header {
   height: 4.5rem;
   display: flex;

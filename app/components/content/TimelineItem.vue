@@ -31,7 +31,7 @@ function formatDate(date: string) {
   </li>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .timeline-item {
   padding-left: var(--spacing-10);
   position: relative;

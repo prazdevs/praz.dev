@@ -4,7 +4,7 @@
   </ul>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 ul {
   font-size: var(--font-size-md);
   margin-top: 1rem;

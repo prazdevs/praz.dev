@@ -16,7 +16,7 @@ defineProps<{
   </NuxtLink>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .link {
   line-height: normal;
   text-decoration: none;
