@@ -5,9 +5,10 @@ const props = defineProps<{
   description: string
 }>()
 
-const { data } = useFetch(`https://ungh.cc/repos/${props.repo}`, {
+const { data } = useLazyFetch(`https://ungh.cc/repos/${props.repo}`, {
   transform: (d: { repo: { stars: number, forks: number } }) => d.repo,
   default: () => ({ stars: '-', forks: '-' }),
+  server: false,
 })
 </script>
 
@@ -24,7 +25,6 @@ const { data } = useFetch(`https://ungh.cc/repos/${props.repo}`, {
         {{ '(opens in a new tab)' }}
       </span>
     </ContentLink>
-
     <div>
       {{ description }}
     </div>
