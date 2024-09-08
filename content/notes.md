@@ -2,6 +2,6 @@
 navigation: false
 ---
 
-# Blog
+# Notes
 
-:blog-list
+:notes-list

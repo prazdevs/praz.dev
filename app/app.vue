@@ -24,7 +24,7 @@ useHead({
     </NuxtLink>
     <nav class="header-nav">
       <NuxtLink
-        v-for="to in ['/work', '/blog']"
+        v-for="to in ['/work', '/notes']"
         :key="to"
         :to="to"
         class="header-link"
