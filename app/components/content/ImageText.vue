@@ -8,7 +8,7 @@ defineProps<{ reverse?: boolean, image: string }>()
       <slot />
     </div>
     <div class="image-container">
-      <NuxtImg class="image" :src="image"  />
+      <NuxtImg class="image" :src="image" />
     </div>
   </div>
 </template>
@@ -36,8 +36,6 @@ defineProps<{ reverse?: boolean, image: string }>()
   width: auto;
 }
 
-
-
 @media screen and (min-width: 600px) {
   .home-header {
     flex-direction: row-reverse;
@@ -51,7 +49,7 @@ defineProps<{ reverse?: boolean, image: string }>()
   .image-container {
     margin-top: var(--spacing-8);
   }
-  
+
   .image {
     max-height: 200px;
     max-width: 200px;
