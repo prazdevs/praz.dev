@@ -12,8 +12,7 @@ export const identity = {
 } as const
 
 export const socials = {
-  twitter: 'https://twitter.com/prazdevs',
+  bluesky: 'https://bsky.app/profile/praz.dev',
   github: 'https://github.com/prazdevs',
   linkedin: 'https://www.linkedin.com/in/sachabouillez',
-  mastodon: 'https://hachyderm.io/@praz',
 } as const

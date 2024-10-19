@@ -19,20 +19,10 @@ import { socials } from '~~/config'
       <NuxtLink
         class="link"
         target="_blank"
-        aria-label="Twitter profile (opens in new tab)"
-        :to="socials.twitter"
+        aria-label="Bluesky profile (opens in new tab)"
+        :to="socials.bluesky"
       >
-        <Icon class="icon" name="ph:twitter-logo" />
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink
-        class="link"
-        target="_blank"
-        aria-label="Mastodon profile (opens in new tab)"
-        :to="socials.mastodon"
-      >
-        <Icon class="icon" name="ph:mastodon-logo" />
+        <Icon class="icon" name="ph:butterfly" />
       </NuxtLink>
     </li>
     <li>
