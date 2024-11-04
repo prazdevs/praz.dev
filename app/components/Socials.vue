@@ -11,7 +11,7 @@ import { socials } from '~~/config'
         aria-label="GitHub profile (opens in new tab)"
         :to="socials.github"
       >
-        <Icon class="icon" name="ph:github-logo" />
+        <Icon class="icon" name="mingcute:github-line" />
       </NuxtLink>
     </li>
 
@@ -22,7 +22,7 @@ import { socials } from '~~/config'
         aria-label="Bluesky profile (opens in new tab)"
         :to="socials.bluesky"
       >
-        <Icon class="icon" name="ph:butterfly" />
+        <Icon class="icon" name="mingcute:bluesky-social-line" />
       </NuxtLink>
     </li>
     <li>
@@ -32,7 +32,7 @@ import { socials } from '~~/config'
         aria-label="LinkedIn profile (opens in new tab)"
         :to="socials.linkedin"
       >
-        <Icon class="icon" name="ph:linkedin-logo" />
+        <Icon class="icon" name="mingcute:linkedin-line" />
       </NuxtLink>
     </li>
   </ul>

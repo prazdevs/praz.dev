@@ -20,7 +20,7 @@ const { data } = useLazyFetch(`https://ungh.cc/repos/${props.repo}`, {
       :to="`https://github.com/${repo}`"
     >
       {{ name }}
-      <Icon name="ph:arrow-square-out-bold" />
+      <Icon name="mingcute:external-link-line" />
       <span class="visually-hidden">
         {{ '(opens in a new tab)' }}
       </span>
@@ -30,11 +30,11 @@ const { data } = useLazyFetch(`https://ungh.cc/repos/${props.repo}`, {
     </div>
     <div class="repo-data">
       <span title="stars">
-        <Icon class="icon" name="ph:star-bold" />
+        <Icon class="icon" name="mingcute:star-line" />
         {{ data.stars }}
       </span>
       <span title="forks">
-        <Icon class="icon" name="ph:git-fork-bold" />
+        <Icon class="icon" name="mingcute:git-branch-line" />
         {{ data.forks }}
       </span>
     </div>
