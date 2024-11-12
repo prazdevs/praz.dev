@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { animate } from 'motion'
+
 const props = defineProps<{
   name: string
   repo: string
@@ -7,8 +9,23 @@ const props = defineProps<{
 
 const { data } = useLazyFetch(`https://ungh.cc/repos/${props.repo}`, {
   transform: (d: { repo: { stars: number, forks: number } }) => d.repo,
-  default: () => ({ stars: '-', forks: '-' }),
   server: false,
+})
+
+const stars = ref(0)
+const forks = ref(0)
+
+whenever(data, (d) => {
+  animate(0, d.stars, {
+    duration: 1,
+    ease: 'easeInOut',
+    onUpdate: v => stars.value = Math.round(v),
+  })
+  animate(0, d.forks, {
+    duration: 1,
+    ease: 'easeInOut',
+    onUpdate: v => forks.value = Math.round(v),
+  })
 })
 </script>
 
@@ -31,11 +48,11 @@ const { data } = useLazyFetch(`https://ungh.cc/repos/${props.repo}`, {
     <div class="repo-data">
       <span title="stars">
         <Icon class="icon" name="mingcute:star-line" />
-        {{ data.stars }}
+        <span>{{ stars }}</span>
       </span>
       <span title="forks">
         <Icon class="icon" name="mingcute:git-branch-line" />
-        {{ data.forks }}
+        <span>{{ forks }}</span>
       </span>
     </div>
   </li>

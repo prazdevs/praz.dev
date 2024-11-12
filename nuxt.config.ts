@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/fontaine',
+    '@vueuse/nuxt'
   ],
   css: [
     '~/assets/styles/index.css',
