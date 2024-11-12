@@ -1,6 +1,6 @@
 # Hi I'm Sacha
 
-I'm 28 years old and go by any pronoun.
+I'm 28 years old and go by they/them.
 
 I'm a developer based in France with an ideal to make the web a more inclusive and accessible place.
 
