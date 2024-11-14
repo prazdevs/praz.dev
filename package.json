@@ -21,7 +21,6 @@
     "@antfu/eslint-config": "^3.9.1",
     "@iconify-json/mingcute": "^1.2.1",
     "@nuxt/content": "^2.13.4",
-    "@nuxt/eslint": "^0.6.1",
     "@nuxt/icon": "^1.7.5",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/fontaine": "^0.4.4",
