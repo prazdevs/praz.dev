@@ -12,19 +12,20 @@ const { data } = useLazyFetch(`https://ungh.cc/repos/${props.repo}`, {
   server: false,
 })
 
-const stars = ref(0)
-const forks = ref(0)
+const fmt = new Intl.NumberFormat('en-GB')
+const stars = ref('0')
+const forks = ref('0')
 
 whenever(data, (d) => {
   animate(0, d.stars, {
     duration: 1,
     ease: 'easeInOut',
-    onUpdate: v => stars.value = Math.round(v),
+    onUpdate: v => stars.value = fmt.format(Math.round(v)),
   })
   animate(0, d.forks, {
     duration: 1,
     ease: 'easeInOut',
-    onUpdate: v => forks.value = Math.round(v),
+    onUpdate: v => forks.value = fmt.format(Math.round(v)),
   })
 })
 </script>
