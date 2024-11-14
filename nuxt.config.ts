@@ -12,10 +12,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-08-16',
   modules: [
     '@nuxt/content',
+    '@nuxt/eslint',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/fontaine',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
   css: [
     '~/assets/styles/index.css',

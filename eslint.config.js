@@ -1,7 +1,4 @@
-import config from '@antfu/eslint-config'
+import antfu from '@antfu/eslint-config'
+import nuxt from './.nuxt/eslint.config.mjs'
 
-export default config({
-  typescript: {
-    tsconfigPath: 'tsconfig.json',
-  },
-})
+export default nuxt(antfu())
