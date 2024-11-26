@@ -26,4 +26,4 @@
 This website is just my own personal space, where I share thoughts and reflections.
 It has been made purely from human creativity with the help of great framework and tools.
 
-You can find me over Twitter @prazdevs
+You can find me over Bluesky @praz.dev
