@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/fontaine',
+    '@nuxtjs/seo',
     '@vueuse/nuxt',
   ],
   devtools: {
@@ -14,6 +15,16 @@ export default defineNuxtConfig({
   css: [
     '~/assets/styles/index.css',
   ],
+  site: {
+    url: 'https://praz.dev',
+    name: 'PraZ.dev',
+    defaultLocale: 'en',
+    socials: {
+      bsky: 'https://bsky.app/profile/praz.dev',
+      github: 'https://github.com/prazdevs',
+      linkedin: 'https://www.linkedin.com/in/sachabouillez',
+    },
+  },
   content: {
     documentDriven: true,
     markdown: {
@@ -43,6 +54,17 @@ export default defineNuxtConfig({
       nuxt: {
         sortConfigKeys: true,
       },
+    },
+  },
+  robots: {
+    blockAiBots: true,
+    blockNonSeoBots: true,
+    credits: false,
+  },
+  seo: {
+    meta: {
+      colorScheme: 'dark',
+      themeColor: '#352c34',
     },
   },
 })

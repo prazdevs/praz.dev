@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { socials } from '~~/config'
+const site = useSiteConfig()
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import { socials } from '~~/config'
         class="link"
         target="_blank"
         aria-label="GitHub profile (opens in new tab)"
-        :to="socials.github"
+        :to="site.socials.github"
       >
         <Icon class="icon" name="mingcute:github-line" />
       </NuxtLink>
@@ -20,7 +20,7 @@ import { socials } from '~~/config'
         class="link"
         target="_blank"
         aria-label="Bluesky profile (opens in new tab)"
-        :to="socials.bluesky"
+        :to="site.socials.bsky"
       >
         <Icon class="icon" name="mingcute:bluesky-social-line" />
       </NuxtLink>
@@ -30,7 +30,7 @@ import { socials } from '~~/config'
         class="link"
         target="_blank"
         aria-label="LinkedIn profile (opens in new tab)"
-        :to="socials.linkedin"
+        :to="site.socials.linkedin"
       >
         <Icon class="icon" name="mingcute:linkedin-line" />
       </NuxtLink>

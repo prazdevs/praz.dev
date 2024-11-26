@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import { site } from '~~/config'
-
 const route = useRoute()
+const site = useSiteConfig()
 
-useHead({
-  htmlAttrs: {
-    lang: 'en',
-  },
+useHead(({
   titleTemplate: title => route.path === '/'
-    ? `${site.name} — ${site.description}`
+    ? `${site.name}`
     : `${title} — ${site.name}`,
-})
+}))
 </script>
 
 <template>
@@ -39,7 +35,7 @@ useHead({
   </main>
   <footer class="footer">
     <Socials />
-    {{ site.copyright }}
+    {{ `© Sacha Bouillez 2024 — All rights reserved` }}
   </footer>
 </template>
 
