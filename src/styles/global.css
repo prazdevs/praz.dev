@@ -1,6 +1,7 @@
 html {
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 body {
