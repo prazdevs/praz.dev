@@ -1,7 +1,6 @@
 html {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: color var(--transition), background-color var(--transition);
 }
 
 body {
@@ -18,7 +17,6 @@ body {
 a {
   text-decoration: underline solid 0.175rem var(--accent-color);
   text-underline-offset: 0.2rem;
-  transition: color var(--transition), text-decoration-color var(--transition);
 }
 
 a:hover,
