@@ -1,0 +1,53 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300 800;
+  src: url('/fonts/shantell-sans.woff2') format('woff2');
+  font-family: 'Shantell Sans';
+  font-display: swap;
+}
+
+html,
+body {
+  line-height: var(--leading-base);
+  font-family: 'Shantell Sans', sans-serif;
+}
+
+.text-4xl {
+  font-size: var(--font-size-4xl);
+  line-height: var(--leading-tight);
+  font-variation-settings: 'BNCE' -60, 'INFM' 70;
+}
+
+.text-3xl {
+  font-size: var(--font-size-3xl);
+  line-height: var(--leading-tight);
+  font-variation-settings: 'BNCE' -50, 'INFM' 60;
+}
+
+h1,
+.text-2xl {
+  margin: var(--space-l) 0 var(--space-m);
+  font-size: var(--font-size-2xl);
+  line-height: var(--leading-tight);
+  font-variation-settings: 'BNCE' -40, 'INFM' 50;
+}
+
+h2,
+.text-xl {
+  margin: var(--space-l) 0 var(--space-m);
+  font-size: var(--font-size-xl);
+  line-height: var(--leading-tight);
+  font-variation-settings: 'BNCE' -30, 'INFM' 40;
+}
+
+h3,
+.text-l {
+  margin: var(--space-m) 0 var(--space-s);
+  font-size: var(--font-size-l);
+  line-height: var(--leading-tight);
+  font-variation-settings: 'BNCE' -20, 'INFM' 30;
+}
+
+p {
+  font-size: var(--font-size-m);
+}

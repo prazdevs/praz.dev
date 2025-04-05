@@ -1,0 +1,32 @@
+html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body {
+  max-width: min(72ch, 100%);
+  margin: auto;
+  padding: var(--space-s);
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+a {
+  text-decoration: underline solid 0.175rem var(--accent-color);
+  text-underline-offset: 0.2rem;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-color);
+  text-decoration-color: transparent;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 0.11em;
+}

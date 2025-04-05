@@ -1,0 +1,51 @@
+/*
+  Fluid typescale and spaces
+  @link https://utopia.fyi/type/calculator?c=320,18,1.25,1024,22,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+*/
+:root {
+  --font-size-xs: clamp(0.72rem, 0.6955rem + 0.1223vw, 0.7738rem);
+  --font-size-s: clamp(0.9rem, 0.8402rem + 0.2989vw, 1.0315rem);
+  --font-size-m: clamp(1.125rem, 1.0114rem + 0.5682vw, 1.375rem);
+  --font-size-l: clamp(1.4063rem, 1.2123rem + 0.9696vw, 1.8329rem);
+  --font-size-xl: clamp(1.7578rem, 1.4463rem + 1.5577vw, 2.4432rem);
+  --font-size-2xl: clamp(2.1973rem, 1.7157rem + 2.4081vw, 3.2568rem);
+  --font-size-3xl: clamp(2.7466rem, 2.0217rem + 3.6244vw, 4.3413rem);
+  --font-size-4xl: clamp(3.4332rem, 2.3633rem + 5.3495vw, 5.787rem);
+
+  --space-3xs: clamp(0.3125rem, 0.2841rem + 0.142vw, 0.375rem);
+  --space-2xs: clamp(0.5625rem, 0.5057rem + 0.2841vw, 0.6875rem);
+  --space-xs: clamp(0.875rem, 0.7898rem + 0.4261vw, 1.0625rem);
+  --space-s: clamp(1.125rem, 1.0114rem + 0.5682vw, 1.375rem);
+  --space-m: clamp(1.6875rem, 1.517rem + 0.8523vw, 2.0625rem);
+  --space-l: clamp(2.25rem, 2.0227rem + 1.1364vw, 2.75rem);
+  --space-xl: clamp(3.375rem, 3.0341rem + 1.7045vw, 4.125rem);
+  --space-2xl: clamp(4.5rem, 4.0455rem + 2.2727vw, 5.5rem);
+  --space-3xl: clamp(6.75rem, 6.0682rem + 3.4091vw, 8.25rem);
+
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-base: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  --transition: 0.2s ease-in-out;
+}
+
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #262626;
+  --accent-color: #6520d8;
+}
+
+:root.dark {
+  --background-color: #262626;
+  --text-color: #f5f5f5;
+  --accent-color: #c4b5fd;
+}
+
+@media (scripting: none) and (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #262626;
+    --text-color: #f5f5f5;
+    --accent-color: #c4b5fd;
+  }
+}

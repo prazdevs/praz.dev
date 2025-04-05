@@ -1,0 +1,29 @@
+---
+import ThemeToggle from '../components/ThemeToggle.astro'
+import '../styles/reset.css'
+import '../styles/tokens.css'
+import '../styles/typography.css'
+import '../styles/global.css'
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link
+      rel='preload'
+      href='/fonts/shantell-sans.woff2'
+      as='font'
+      type='font/woff2'
+      crossorigin
+    />
+    <meta name='generator' content={Astro.generator} />
+    <title>PraZ' garden</title>
+  </head>
+  <body>
+    <div><ThemeToggle /></div>
+    <slot />
+  </body>
+</html>
