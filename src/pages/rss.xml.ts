@@ -12,7 +12,7 @@ export async function GET(context: APIContext) {
     site: context.site!,
     items: notes.map(({ data, id }) => ({
       ...data,
-      link: `/notes/${id}`,
+      link: `/${id}`,
     })),
   })
 }
