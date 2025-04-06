@@ -16,7 +16,8 @@ body {
 }
 
 a {
-  text-decoration: underline solid var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
   text-decoration-thickness: 3px;
   text-underline-offset: 0.2rem;
   border-radius: 3px;
