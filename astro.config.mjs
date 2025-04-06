@@ -4,5 +4,8 @@ export default defineConfig({
   site: 'https://praz.garden',
   build: {
     format: 'file'
-  }
+  },
+  markdown: {
+    gfm: true,
+  },
 })

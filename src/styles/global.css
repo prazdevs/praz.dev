@@ -16,9 +16,9 @@ body {
 }
 
 a {
-  text-decoration: underline solid 0.175rem var(--accent-color);
+  text-decoration: underline solid 3px var(--accent-color);
   text-underline-offset: 0.2rem;
-  border-radius: 0.175rem;
+  border-radius: 3px;
 }
 
 a:hover,
@@ -30,4 +30,40 @@ a:focus-visible {
 a:focus-visible {
   outline: 3px solid var(--accent-color);
   outline-offset: 0.11em;
+}
+
+.footnotes {
+  margin-top: var(--space-xl);
+  font-size: var(--font-size-s);
+}
+
+.footnotes p {
+  margin: var(--space-s) 0;
+  font-size: var(--font-size-s);
+}
+
+.footnotes a {
+  text-decoration-thickness: 2px;
+}
+
+sup a,
+.footnotes .data-footnote-backref {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+sup a:hover,
+sup a:focus-visible,
+.footnotes .data-footnote-backref:hover,
+.footenotes .data-footnote-backref:focus-visible {
+  color: var(--text-color);
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

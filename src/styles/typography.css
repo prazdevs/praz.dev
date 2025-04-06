@@ -51,3 +51,7 @@ h3,
 p {
   font-size: var(--font-size-m);
 }
+
+sup {
+  font-size: var(--font-size-s);
+}
