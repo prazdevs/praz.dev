@@ -33,7 +33,7 @@ svg {
 }
 
 img {
-  content-visibility: hidden;
+  content-visibility: auto;
 }
 
 input,

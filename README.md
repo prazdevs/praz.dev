@@ -1,5 +1,5 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f24f7eab-ecf9-45f4-b341-202e819bd5ca/deploy-status)](https://app.netlify.com/sites/prazdev/deploys)
+My little digital garden built with [Astro](https://astro.build).
 
-My little digital garden built with Astro.
+Code licensed under [MIT](./license) and content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)</a>.
 
-<samp>licensed under <a href='./LICENSE'>MIT</a></samp>
+Font used is [Shantell Sans](https://shantellsans.com/) and icons are from [MingCute](https://www.mingcute.com/). 

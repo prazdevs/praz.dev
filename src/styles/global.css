@@ -4,9 +4,10 @@ html {
 }
 
 body {
-  max-width: min(72ch, 100%);
+  max-width: min(52ch, 100%);
   margin: auto;
   padding: var(--space-s);
+  font-size: var(--font-size-m);
 }
 
 ::selection {
@@ -17,6 +18,7 @@ body {
 a {
   text-decoration: underline solid 0.175rem var(--accent-color);
   text-underline-offset: 0.2rem;
+  border-radius: 0.175rem;
 }
 
 a:hover,

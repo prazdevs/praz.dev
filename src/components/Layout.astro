@@ -23,7 +23,72 @@ import '../styles/global.css'
     <title>PraZ' garden</title>
   </head>
   <body>
-    <div><ThemeToggle /></div>
-    <slot />
+    <header class="site-header">
+      <a class="site-logo" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 36 36">
+          <path fill="#946AEA" d="M32 28H4V4a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4z" />
+          <path d="M8 36h20a4 4 0 0 0 4-4v-4c-4.117-2.744-21.139-8.233-28 0v4a4 4 0 0 0 4 4" fill="#404040" />
+          <circle cx="15.276" cy="12.495" r="7.578" fill="#e5e5e5" />
+        </svg>
+        <span>PraZ' garden</span>
+      </a>
+      <ThemeToggle  />
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <span>© 2025 Sacha Bouillez.</span>
+      <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>
+      <a href="/rss.xml" aria-label="RSS feed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+          <g fill="none">
+            <path d="M12.6 23.26h-.02l-.07.03h-.03l-.07-.03h-.03v.01l-.02.43v.02l.02.02.1.07h.02l.11-.07.01-.02v-.02l-.01-.42q0-.02-.02-.02m.27-.11h-.02l-.18.09-.01.01v.01l.02.43v.02l.2.1.04-.01v-.02l-.03-.61q0-.02-.02-.03m-.72 0a.02.02 0 0 0-.02.01l-.01.02-.03.61.01.03h.02l.2-.1.01-.02.02-.43v-.01l-.01-.01z"/>
+            <path fill="currentColor" d="M5.5 17a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m0-14A15.5 15.5 0 0 1 21 18.5v.53a1 1 0 0 1-2-.06v-.47A13.5 13.5 0 0 0 5.5 5h-.47a1 1 0 0 1-.06-2h.53m0 7a8.5 8.5 0 0 1 8.48 9.07 1 1 0 0 1-2-.14 6.5 6.5 0 0 0-6.91-6.92 1 1 0 1 1-.14-2L5.5 10"/>
+          </g>
+        </svg>
+      </a>
+    </footer>
   </body>
 </html>
+
+<style>
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-l);
+    gap: var(--space-s);
+  }
+
+  .site-logo {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: var(--font-size-m);
+    font-weight: bold;
+    gap: var(--space-3xs);
+    line-height: var(--leading-tight);
+    text-decoration: none;
+  }
+
+  .site-logo svg {
+    height: var(--font-size-xl);
+    width: var(--font-size-xl);
+  }
+
+  .site-footer {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3xs);
+    margin-top: var(--space-m);
+    font-size: var(--font-size-xs);
+  }
+
+  .site-footer a {
+    text-decoration-thickness: 1px;
+  }
+</style>
