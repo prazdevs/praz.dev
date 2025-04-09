@@ -12,46 +12,34 @@ body {
   font-family: 'Shantell Sans', sans-serif;
 }
 
-.text-4xl {
-  font-size: var(--font-size-4xl);
-  line-height: var(--leading-tight);
-  font-variation-settings: 'BNCE' -60, 'INFM' 70;
-}
-
-.text-3xl {
-  font-size: var(--font-size-3xl);
-  line-height: var(--leading-tight);
-  font-variation-settings: 'BNCE' -50, 'INFM' 60;
-}
-
-h1,
-.text-2xl {
-  margin: var(--space-l) 0 var(--space-m);
+h1 {
+  margin: 0 0 var(--space-m);
   font-size: var(--font-size-2xl);
   line-height: var(--leading-tight);
   font-variation-settings: 'BNCE' -40, 'INFM' 50;
 }
 
-h2,
-.text-xl {
+h2 {
   margin: var(--space-l) 0 var(--space-m);
   font-size: var(--font-size-xl);
   line-height: var(--leading-tight);
   font-variation-settings: 'BNCE' -30, 'INFM' 40;
 }
 
-h3,
-.text-l {
+h3 {
   margin: var(--space-m) 0 var(--space-s);
   font-size: var(--font-size-l);
   line-height: var(--leading-tight);
   font-variation-settings: 'BNCE' -20, 'INFM' 30;
 }
 
-p {
+p,
+blockquote {
+  margin: var(--space-s) 0 var(--space-xs);
   font-size: var(--font-size-m);
 }
 
 sup {
   font-size: var(--font-size-s);
+  word-break: break-all;
 }
