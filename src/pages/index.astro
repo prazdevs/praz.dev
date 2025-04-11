@@ -7,7 +7,7 @@ const notes = await getCollection('notes')
 
 <Layout>
   <div class='banner'>
-    <img class='chibi' src='chibi.webp' alt='' height='200' width='160' />
+    <img class='chibi' src='chibi.webp' alt='' height='200' width='197' />
     <h1 class='title'>I'm Sacha<sup>(they/any)</sup></h1>
   </div>
   <p class='description'>
@@ -17,14 +17,23 @@ const notes = await getCollection('notes')
   <ul>
     {notes.map(note => <li><a href={`/${note.id}`}>{note.data.title}</a></li>)}
   </ul>
+  <p class="credits">
+    Scrungly chibi by <a href='https://bsky.app/profile/acidicchoco.bsky.social' target='_blank'>@acidicchoco</a>
+  </p>
 </Layout>
 
 <style>
 .chibi {
+  height: auto;
   margin: 0 auto var(--space-s);
 }
 
 .title {
   text-align: center;
+}
+
+.credits {
+  text-align: center;
+  font-size: var(--font-size-s);
 }
 </style>
