@@ -12,6 +12,10 @@
   --font-size-3xl: clamp(2.7466rem, 2.0217rem + 3.6244vw, 4.3413rem);
   --font-size-4xl: clamp(3.4332rem, 2.3633rem + 5.3495vw, 5.787rem);
 
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
   --space-3xs: clamp(0.3125rem, 0.2841rem + 0.142vw, 0.375rem);
   --space-2xs: clamp(0.5625rem, 0.5057rem + 0.2841vw, 0.6875rem);
   --space-xs: clamp(0.875rem, 0.7898rem + 0.4261vw, 1.0625rem);

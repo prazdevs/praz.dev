@@ -7,7 +7,7 @@ body {
   max-width: min(52ch, 100%);
   margin: auto;
   padding: var(--space-s);
-  font-size: var(--font-size-m);
+
 }
 
 ::selection {
@@ -18,20 +18,23 @@ body {
 a {
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 0.2rem;
-  border-radius: 3px;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.15em;
+  border-radius: 0.15em;
 }
 
 a:hover,
-a:focus-visible {
+a:focus-visible,
+button:hover,
+button:focus-visible {
   color: var(--accent-color);
   text-decoration-color: transparent;
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 3px solid var(--accent-color);
-  outline-offset: 0.11em;
+  outline-offset: 0.10em;
 }
 
 .footnotes {
@@ -47,10 +50,6 @@ a:focus-visible {
 .footnotes ol {
   padding-inline-start: 2rem;
   padding-inline-end: 2rem;
-}
-
-.footnotes a {
-  text-decoration-thickness: 2px;
 }
 
 sup a,

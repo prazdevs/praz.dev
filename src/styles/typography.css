@@ -6,15 +6,17 @@
   font-display: swap;
 }
 
-html,
 body {
   line-height: var(--leading-base);
   font-family: 'Shantell Sans', sans-serif;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-normal);
 }
 
 h1 {
   margin: 0 0 var(--space-m);
   font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
   line-height: var(--leading-tight);
   font-variation-settings: 'BNCE' -40, 'INFM' 50;
 }
@@ -22,6 +24,7 @@ h1 {
 h2 {
   margin: var(--space-l) 0 var(--space-m);
   font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
   line-height: var(--leading-tight);
   font-variation-settings: 'BNCE' -30, 'INFM' 40;
 }
@@ -29,6 +32,7 @@ h2 {
 h3 {
   margin: var(--space-m) 0 var(--space-s);
   font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
   line-height: var(--leading-tight);
   font-variation-settings: 'BNCE' -20, 'INFM' 30;
 }
@@ -37,6 +41,10 @@ p,
 blockquote {
   margin: var(--space-s) 0 var(--space-xs);
   font-size: var(--font-size-m);
+}
+
+strong {
+  font-weight: var(--font-weight-semibold);
 }
 
 sup {
