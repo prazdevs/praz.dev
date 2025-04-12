@@ -5,7 +5,4 @@ export default defineConfig({
   build: {
     format: 'file'
   },
-  markdown: {
-    gfm: true,
-  },
 })

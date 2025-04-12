@@ -4,13 +4,8 @@ title: Human give me attention meow
 
 Cat ipsum dolor sit amet, _thinking about you_ i'm joking it's food
 always food kick up litter or walk on a keyboard refuse to leave
-cardboard box. Purr when being pet[^1]. Find a way to fit in tiny box
+cardboard box. Purr when being pet. Find a way to fit in tiny box
 destroy dog yet my left donut is missing, as is my right so catty
-
-[^1]: Chase the pig around [the house](/) i can haz, and ignore the
-    human until she needs to get up, then climb on her lap and sprawl
-    for cough furball into food bowl then scratch owner for a new one
-    or meow and walk away growl at dogs in my sleep.
 
 ## Sniff sniff
 
@@ -25,14 +20,12 @@ around on couch, meow constantly until given food.
 
 Lick face hiss at owner, pee a lot, and meow repeatedly scratch at
 fence purrrrrr eat muffins and poutine until owner comes back ears
-back wide eyed eat an easter feather as if it were a bird[^2] then
+back wide eyed eat an easter feather as if it were a bird then
 burp victoriously.
 
 > This is a t est quote and lets see it. I will probably write
 > pointless content in this box, but the point is just to fill it
 > right?
-
-[^2]: Birbs LUL.
 
 ### One of these days i'm going to get that red dot
 

@@ -37,34 +37,6 @@ button:focus-visible {
   outline-offset: 0.10em;
 }
 
-.footnotes {
-  margin-top: var(--space-xl);
-  font-size: var(--font-size-s);
-}
-
-.footnotes p {
-  margin: var(--space-s) 0;
-  font-size: var(--font-size-s);
-}
-
-.footnotes ol {
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem;
-}
-
-sup a,
-.footnotes .data-footnote-backref {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
-sup a:hover,
-sup a:focus-visible,
-.footnotes .data-footnote-backref:hover,
-.footenotes .data-footnote-backref:focus-visible {
-  color: var(--text-color);
-}
-
 .sr-only {
   position: absolute;
   left: -10000px;
